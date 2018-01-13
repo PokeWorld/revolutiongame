@@ -24,20 +24,8 @@
     Private Sub btnDayAdvance_Click(sender As Object, e As EventArgs) Handles btnDayAdvance.Click
         My.Settings.DayCount += 1
         lblDayCount.Text = "Day " & My.Settings.DayCount.ToString()
-        Select Case My.Settings.AdIntensity
-            Case 1
-                My.Settings.Users += 2
-                My.Settings.CashCount -= 1
-            Case 2
-                My.Settings.Users += 4
-                My.Settings.CashCount -= 2
-            Case 3
-                My.Settings.Users += 6
-                My.Settings.CashCount -= 3
-            Case Else
-                My.Settings.Users += 1
-                My.Settings.CashCount -= 1
-        End Select
+        My.Settings.Users += My.Settings.AdIntensity * 2
+        My.Settings.CashCount -= My.Settings.AdIntensity
         lblMoney.Text = "Money: $" & My.Settings.CashCount
     End Sub
 
