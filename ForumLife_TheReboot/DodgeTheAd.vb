@@ -1,57 +1,38 @@
 ﻿Public Class DodgeTheAd
     Dim score As Integer = 0
-
+    Dim items As Dictionary(Of String, Boolean) = New Dictionary(Of String, Boolean)
     Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
-        If My.Settings.LastQuestionDodge = 5 Then
-            If comboxYesOrNo.Text = "Yes" Then
-                score += 1
-                comboxYesOrNo.Text = "Select an option."
-                My.Settings.CashCount += 1
-            End If
-        ElseIf My.Settings.LastQuestionDodge = 4 Then
-            If comboxYesOrNo.Text = "No" Then
-                score += 1
-                comboxYesOrNo.Text = "Select an option."
-                My.Settings.CashCount += 1
-            End If
-        ElseIf My.Settings.LastQuestionDodge = 3 Then
-            If comboxYesOrNo.Text = "Yes" Then
-                score += 1
-                comboxYesOrNo.Text = "Select an option."
-                My.Settings.CashCount += 1
-            End If
-        ElseIf My.Settings.LastQuestionDodge = 2 Then
-            If comboxYesOrNo.Text = "No" Then
-                score += 1
-                comboxYesOrNo.Text = "Select an option."
-                My.Settings.CashCount += 1
-            End If
+        Dim question As Boolean = items.Item(lblAd.Text)
+        Dim answer As Boolean
+        If comboxYesOrNo.Text = "Yes" Then
+            answer = True
         Else
-            If comboxYesOrNo.Text = "Yes" Then
-                score += 1
-                comboxYesOrNo.Text = "Select an option."
-                My.Settings.CashCount += 1
-            End If
+            answer = False
+        End If
+        If question = answer Then
+            reset(True)
+        Else
+            reset(False)
         End If
         lblScore.Text = score
-        Dim upperbound = 5
-        Dim lowerbound = 1
-        Dim randomvalue = CInt(Math.Floor((upperbound - lowerbound + 1) * Rnd()))
-        If randomvalue = 5 Then
-            lblAd.Text = "Ad for the newest version of Microsoft Windows"
-        ElseIf randomvalue = 4 Then
-            lblAd.Text = "adf.ly link that is not trusted"
-        ElseIf randomvalue = 3 Then
-            lblAd.Text = "Ad for the new Facebook network"
-        ElseIf randomvalue = 2 Then
-            lblAd.Text = "Ad for the Pirate Bay torrenting site."
+        lblAd.Text = items.Keys(CInt(Math.Floor(5 * Rnd())))
+    End Sub
+
+    Public Sub reset(correct As Boolean)
+        If correct = True Then
+            score += 1
+            comboxYesOrNo.Text = "Select an option."
+            My.Settings.CashCount += 1
         Else
-            lblAd.Text = "Ad for your site, " & My.Settings.SiteName
+            comboxYesOrNo.Text = "Select an option."
         End If
-        My.Settings.LastQuestionDodge = randomvalue
     End Sub
 
     Private Sub DodgeTheAd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        My.Settings.LastQuestionDodge = 5
+        items.Add("Ad for the newest version of Microsoft Windows", True)
+        items.Add("Ad for the new Facebook network", True)
+        items.Add("Ad for your site, " + My.Settings.SiteName, True)
+        items.Add("Ad for the Pirate Bay torrenting site.", False)
+        items.Add("adf.ly link that is not trusted", False)
     End Sub
 End Class

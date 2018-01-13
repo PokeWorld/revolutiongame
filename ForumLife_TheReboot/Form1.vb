@@ -12,31 +12,28 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Dim upperbound = 10
-        Dim lowerbound = 1
-        Dim randomvalue = CInt(Math.Floor((upperbound - lowerbound + 1) * Rnd()))
-        If randomvalue = 10 Then
-            lblAdvice.Text = "I promise this will be finished by mid 2019"
-        ElseIf randomvalue = 9 Then
-            lblAdvice.Text = "Puzzled? Go to the 'Site Controller' application to get started."
-        ElseIf randomvalue = 8 Then
-            lblAdvice.Text = "Still in VB, and VERY CLOSED SOURCE."
-        ElseIf randomvalue = 7 Then
-            lblAdvice.Text = "Hi! I am a bug. Just kidding."
-        ElseIf randomvalue = 6 Then
-            lblAdvice.Text = "If Rylan was a developer, this would be Google Cod. :fish:"
-        ElseIf randomvalue = 5 Then
-            lblAdvice.Text = "we want forumlife back."
-        ElseIf randomvalue = 4 Then
-            lblAdvice.Text = "Does VB support Discord Rich Presence? If so, it will be here (eventually)"
-        ElseIf randomvalue = 4 Then
-            lblAdvice.Text = "bytes and bits"
-        ElseIf randomvalue = 3 Then
-            lblAdvice.Text = "Tech Demo 1. (c) Pallet Games"
-        ElseIf randomvalue = 2 Then
-            lblAdvice.Text = "hi im out of ideas"
-        Else
-            lblAdvice.Text = "ideameme"
-        End If
+        Dim randomvalue = CInt(Math.Floor((10) * Rnd()))
+        Select Case CInt(Math.Floor((10) * Rnd()))
+            Case 10
+                lblAdvice.Text = "I promise this will be finished by mid 2019"
+            Case 9
+                lblAdvice.Text = "Puzzled? Go to the 'Site Controller' application to get started."
+            Case 8
+                lblAdvice.Text = "Still in VB, and VERY CLOSED SOURCE."
+            Case 7
+                lblAdvice.Text = "Hi! I am a bug. Just kidding."
+            Case 6
+                lblAdvice.Text = "If Rylan was a developer, this would be Google Cod. :fish:"
+            Case 5
+                lblAdvice.Text = "we want forumlife back."
+            Case 4
+                lblAdvice.Text = "Does VB support Discord Rich Presence? If so, it will be here (eventually)"
+            Case 3
+                lblAdvice.Text = "bytes and bits"
+            Case 2
+                lblAdvice.Text = "Tech Demo 1. (c) Pallet Games"
+            Case Else
+                lblAdvice.Text = "hi im out of ideas"
+        End Select
     End Sub
 End Class
