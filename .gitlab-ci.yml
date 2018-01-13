@@ -1,0 +1,39 @@
+stages:
+   - build
+   - deploy
+working:
+  stage: build
+  except:
+   - master
+  script:
+   - echo "Build Stage"
+   - echo "Restoring NuGet Packages..."
+   - '"c:\nuget\nuget.exe" restore "./ForumLife_TheReboot.sln"'
+   - echo "Building Solutions..."
+   - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe /consoleloggerparameters:ErrorsOnly /maxcpucount /nologo /property:Configuration=Release /verbosity:quiet "SOLUTION PATH"
+
+stable:
+  stage: build
+  only:
+   - master
+  script:
+   - echo "Build Stage"
+   - echo "Restoring NuGet Packages..."
+   - '"c:\nuget\nuget.exe" restore "./ForumLife_TheReboot.sln"'
+   - echo "Building Solutions..."
+   - C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe /consoleloggerparameters:ErrorsOnly /maxcpucount /nologo /property:Configuration=Release /verbosity:quiet "SOLUTION PATH"
+
+  stage: deploy
+  only: 
+    - dev
+  script:
+   - echo "Deploy Stage"
+  stage: deploy
+
+  script:
+  - echo "Deploy Stage"
+  only: 
+   - master
+
+  tags:
+   - .NET
