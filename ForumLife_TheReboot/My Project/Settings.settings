@@ -17,8 +17,5 @@
     <Setting Name="CashCount" Type="System.Double" Scope="User">
       <Value Profile="(Default)">100</Value>
     </Setting>
-    <Setting Name="LastQuestionDodge" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">5</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

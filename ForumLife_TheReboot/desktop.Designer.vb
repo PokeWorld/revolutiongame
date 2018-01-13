@@ -28,15 +28,15 @@ Partial Class desktop
         Me.DummyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SiteAnalyticsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SiteControllerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DodgeTheAdToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ShutdownToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutAmethystToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnDayAdvance = New System.Windows.Forms.Button()
         Me.lblDayCount = New System.Windows.Forms.Label()
         Me.btnRestart = New System.Windows.Forms.Button()
         Me.lblMoney = New System.Windows.Forms.Label()
-        Me.DodgeTheAdToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.AboutAmethystToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.panelBar.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,9 +44,9 @@ Partial Class desktop
         '
         Me.panelBar.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.panelBar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuToolStripMenuItem})
-        Me.panelBar.Location = New System.Drawing.Point(0, 696)
+        Me.panelBar.Location = New System.Drawing.Point(0, 576)
         Me.panelBar.Name = "panelBar"
-        Me.panelBar.Size = New System.Drawing.Size(1280, 24)
+        Me.panelBar.Size = New System.Drawing.Size(800, 24)
         Me.panelBar.TabIndex = 0
         Me.panelBar.Text = "MenuStrip1"
         '
@@ -60,26 +60,43 @@ Partial Class desktop
         'DummyToolStripMenuItem
         '
         Me.DummyToolStripMenuItem.Name = "DummyToolStripMenuItem"
-        Me.DummyToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.DummyToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.DummyToolStripMenuItem.Text = "Dummy"
         '
         'SiteAnalyticsToolStripMenuItem
         '
         Me.SiteAnalyticsToolStripMenuItem.Name = "SiteAnalyticsToolStripMenuItem"
-        Me.SiteAnalyticsToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.SiteAnalyticsToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.SiteAnalyticsToolStripMenuItem.Text = "Site Analytics"
         '
         'SiteControllerToolStripMenuItem
         '
         Me.SiteControllerToolStripMenuItem.Name = "SiteControllerToolStripMenuItem"
-        Me.SiteControllerToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.SiteControllerToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.SiteControllerToolStripMenuItem.Text = "Site Controller"
+        '
+        'DodgeTheAdToolStripMenuItem
+        '
+        Me.DodgeTheAdToolStripMenuItem.Name = "DodgeTheAdToolStripMenuItem"
+        Me.DodgeTheAdToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.DodgeTheAdToolStripMenuItem.Text = "Dodge The Ad"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(158, 6)
         '
         'ShutdownToolStripMenuItem
         '
         Me.ShutdownToolStripMenuItem.Name = "ShutdownToolStripMenuItem"
-        Me.ShutdownToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
+        Me.ShutdownToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
         Me.ShutdownToolStripMenuItem.Text = "Shutdown"
+        '
+        'AboutAmethystToolStripMenuItem
+        '
+        Me.AboutAmethystToolStripMenuItem.Name = "AboutAmethystToolStripMenuItem"
+        Me.AboutAmethystToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
+        Me.AboutAmethystToolStripMenuItem.Text = "About Amethyst"
         '
         'btnDayAdvance
         '
@@ -117,33 +134,16 @@ Partial Class desktop
         Me.lblMoney.TabIndex = 4
         Me.lblMoney.Text = "Money: $NaN"
         '
-        'DodgeTheAdToolStripMenuItem
-        '
-        Me.DodgeTheAdToolStripMenuItem.Name = "DodgeTheAdToolStripMenuItem"
-        Me.DodgeTheAdToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.DodgeTheAdToolStripMenuItem.Text = "Dodge The Ad"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
-        '
         'Timer1
         '
         Me.Timer1.Enabled = True
-        '
-        'AboutAmethystToolStripMenuItem
-        '
-        Me.AboutAmethystToolStripMenuItem.Name = "AboutAmethystToolStripMenuItem"
-        Me.AboutAmethystToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.AboutAmethystToolStripMenuItem.Text = "About Amethyst"
         '
         'desktop
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.AppWorkspace
-        Me.ClientSize = New System.Drawing.Size(1280, 720)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.lblMoney)
         Me.Controls.Add(Me.btnRestart)
         Me.Controls.Add(Me.lblDayCount)
@@ -153,6 +153,7 @@ Partial Class desktop
         Me.MainMenuStrip = Me.panelBar
         Me.Name = "desktop"
         Me.Text = "desktop"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.panelBar.ResumeLayout(False)
         Me.panelBar.PerformLayout()
         Me.ResumeLayout(False)
