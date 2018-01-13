@@ -31,18 +31,18 @@
         WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub base_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseDown
+    Private Sub base_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseDown, Label1.MouseDown
         drag = True
         mousex = Cursor.Position.X - Left
         mousey = Cursor.Position.Y - Top
     End Sub
-    Private Sub base_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove
+    Private Sub base_MouseMove(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseMove, Label1.MouseMove
         If drag Then
             Top = Cursor.Position.Y - mousey
             Left = Cursor.Position.X - mousex
         End If
     End Sub
-    Private Sub base_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseUp
+    Private Sub base_MouseUp(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Panel1.MouseUp, Label1.MouseUp
         drag = False
     End Sub
 End Class
