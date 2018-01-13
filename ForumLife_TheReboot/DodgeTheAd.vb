@@ -15,7 +15,7 @@
             reset(False)
         End If
         lblScore.Text = score
-        lblAd.Text = items.Keys(CInt(Math.Floor(5 * Rnd())))
+        lblAd.Text = items.Keys(CInt(Math.Floor(13 * Rnd())))
     End Sub
 
     Public Sub reset(correct As Boolean)
@@ -34,5 +34,13 @@
         items.Add("Ad for your site, " + My.Settings.SiteName, True)
         items.Add("Ad for the Pirate Bay torrenting site.", False)
         items.Add("adf.ly link that is not trusted", False)
+        items.Add("Link to a fishy forum that you do not like", False)
+        items.Add("eBay link", True)
+        items.Add("Windows Blue-Screen In Browser Pop-Up", False)
+        items.Add("A link to a media converter", False)
+        items.Add("Link to small software site", False)
+        items.Add("Custom Themes for Windows on Microsoft Site", True)
+        items.Add("Link to site where PC games are sold on disk", True)
+        items.Add("Link to a some-what fishy looking 'AVG'", True)
     End Sub
 End Class
