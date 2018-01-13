@@ -1,0 +1,17 @@
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\bin\Debug\ForumLife_TheReboot.exe.config
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\bin\Debug\ForumLife_TheReboot.exe
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\bin\Debug\ForumLife_TheReboot.pdb
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\bin\Debug\ForumLife_TheReboot.xml
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\ForumLife_TheReboot.vbprojResolveAssemblyReference.cache
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.desktop.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.Dummy.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.Form1.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.Resources.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.SiteAnalytics.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.SiteControl.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\ForumLife_TheReboot.vbproj.GenerateResource.Cache
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\ForumLife_TheReboot.exe
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\ForumLife_TheReboot.xml
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\ForumLife_TheReboot.pdb
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.DodgeTheAd.resources
+C:\Users\Trey\Documents\Visual Studio 2015\Projects\ForumLife_TheReboot\ForumLife_TheReboot\obj\Debug\WebDevGame.AboutAmethyst.resources
