@@ -15,7 +15,7 @@
             reset(False)
         End If
         lblScore.Text = score
-        lblAd.Text = items.Keys(CInt(Math.Floor(13 * Rnd())))
+        lblAd.Text = items.Keys(CInt(Math.Floor(items.Count * Rnd())))
     End Sub
 
     Public Sub reset(correct As Boolean)
