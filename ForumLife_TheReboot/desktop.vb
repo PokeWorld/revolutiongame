@@ -1,6 +1,7 @@
 ﻿Public Class desktop
+    Dim wm As New WindowManager
     Private Sub DummyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DummyToolStripMenuItem.Click
-        Dummy.Show()
+        wm.createWindow(New Dummy, "Dummy")
     End Sub
 
     Private Sub ShutdownToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShutdownToolStripMenuItem.Click
@@ -8,15 +9,14 @@
     End Sub
 
     Private Sub SiteControllerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SiteControllerToolStripMenuItem.Click
-        SiteControl.Show()
+        wm.createWindow(New SiteControl, "Site Control")
     End Sub
 
     Private Sub SiteAnalyticsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SiteAnalyticsToolStripMenuItem.Click
-        SiteAnalytics.Show()
+        wm.createWindow(New SiteAnalytics, "Site Analytics")
     End Sub
 
     Private Sub desktop_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized
         lblDayCount.Text = "Day " & My.Settings.DayCount.ToString
         lblMoney.Text = "Money: $" & My.Settings.CashCount
     End Sub
@@ -52,7 +52,7 @@
     End Sub
 
     Private Sub DodgeTheAdToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DodgeTheAdToolStripMenuItem.Click
-        DodgeTheAd.Show()
+        wm.createWindow(New DodgeTheAd, "Dodge The Ad")
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

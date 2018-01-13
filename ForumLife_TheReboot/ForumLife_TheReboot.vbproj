@@ -78,6 +78,12 @@
     <Compile Include="AboutAmethyst.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="base.Designer.vb">
+      <DependentUpon>base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="base.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="desktop.Designer.vb">
       <DependentUpon>desktop.vb</DependentUpon>
     </Compile>
@@ -88,13 +94,13 @@
       <DependentUpon>DodgeTheAd.vb</DependentUpon>
     </Compile>
     <Compile Include="DodgeTheAd.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Dummy.Designer.vb">
       <DependentUpon>Dummy.vb</DependentUpon>
     </Compile>
     <Compile Include="Dummy.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -122,18 +128,22 @@
       <DependentUpon>SiteAnalytics.vb</DependentUpon>
     </Compile>
     <Compile Include="SiteAnalytics.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="SiteControl.Designer.vb">
       <DependentUpon>SiteControl.vb</DependentUpon>
     </Compile>
     <Compile Include="SiteControl.vb">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="WindowManager.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="AboutAmethyst.resx">
       <DependentUpon>AboutAmethyst.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="base.resx">
+      <DependentUpon>base.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="desktop.resx">
       <DependentUpon>desktop.vb</DependentUpon>

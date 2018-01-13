@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class DodgeTheAd
-    Inherits System.Windows.Forms.Form
+    Inherits System.Windows.Forms.UserControl
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    'UserControl overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class DodgeTheAd
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblAd = New System.Windows.Forms.Label()
         Me.btnCheck = New System.Windows.Forms.Button()
@@ -81,10 +81,12 @@ Partial Class DodgeTheAd
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
+
     End Sub
 
     Friend WithEvents lblAd As Label
     Friend WithEvents btnCheck As Button
     Friend WithEvents lblScore As Label
     Friend WithEvents comboxYesOrNo As ComboBox
+
 End Class
