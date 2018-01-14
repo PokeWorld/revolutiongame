@@ -56,9 +56,10 @@ Partial Class DodgeTheAd
         'lblScore
         '
         Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Lucida Console", 10.0!)
         Me.lblScore.Location = New System.Drawing.Point(580, 9)
         Me.lblScore.Name = "lblScore"
-        Me.lblScore.Size = New System.Drawing.Size(13, 13)
+        Me.lblScore.Size = New System.Drawing.Size(15, 14)
         Me.lblScore.TabIndex = 3
         Me.lblScore.Text = "0"
         '

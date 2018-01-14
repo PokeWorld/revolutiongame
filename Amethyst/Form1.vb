@@ -25,7 +25,7 @@
             Case 6
                 lblAdvice.Text = "If Rylan was a developer, this would be Google Cod. :fish:"
             Case 5
-                lblAdvice.Text = "we want forumlife back."
+                lblAdvice.Text = "Seriously, don't run this at ANYTHING higher than 1080p"
             Case 4
                 lblAdvice.Text = "Does VB support Discord Rich Presence? If so, it will be here (eventually)"
             Case 3
