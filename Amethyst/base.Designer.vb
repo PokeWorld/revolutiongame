@@ -56,6 +56,7 @@ Partial Class base
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(30, 30)
         Me.Button2.TabIndex = 2
+        Me.Button2.TabStop = False
         Me.Button2.Text = "-"
         Me.Button2.UseVisualStyleBackColor = True
         '
@@ -70,8 +71,9 @@ Partial Class base
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(30, 30)
         Me.Button1.TabIndex = 1
+        Me.Button1.TabStop = False
         Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label1
         '

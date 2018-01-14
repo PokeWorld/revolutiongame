@@ -8,6 +8,7 @@
         program.Dock = DockStyle.Fill
         window.Label1.Text = name
         window.Opacity = 0
+        window.TopMost = True
         window.Show()
     End Sub
 
