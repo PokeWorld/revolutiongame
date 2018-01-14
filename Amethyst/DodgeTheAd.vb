@@ -6,29 +6,24 @@
         Dim answer As Boolean
         If comboxYesOrNo.Text = "Yes" Then
             answer = True
-        Else
+        ElseIf comboxYesOrNo.Text = "No" Then
             answer = False
+        Else
+            MsgBox("You have to select an option")
+            Return
         End If
         If question = answer Then
-            reset(True)
-        Else
-            reset(False)
+            score += 1
+            My.Settings.CashCount += 1
         End If
+        comboxYesOrNo.SelectedIndex = 0
         lblScore.Text = score
         lblAd.Text = items.Keys(CInt(Math.Floor(items.Count * Rnd())))
     End Sub
 
-    Public Sub reset(correct As Boolean)
-        If correct = True Then
-            score += 1
-            comboxYesOrNo.Text = "Select an option."
-            My.Settings.CashCount += 1
-        Else
-            comboxYesOrNo.Text = "Select an option."
-        End If
-    End Sub
 
     Private Sub DodgeTheAd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        comboxYesOrNo.SelectedIndex = 0
         items.Add("Ad for the newest version of Microsoft Windows", True)
         items.Add("Ad for the new Facebook network", True)
         items.Add("Ad for your site, " + My.Settings.SiteName, True)
@@ -42,5 +37,10 @@
         items.Add("Custom Themes for Windows on Microsoft Site", True)
         items.Add("Link to site where PC games are sold on disk", True)
         items.Add("Link to a some-what fishy looking 'AVG'", True)
+        items.Add("Link the an irc chat that contains NSFW", False)
+        items.Add("Picture of the google search engine", True)
+        items.Add("NSFW pictures", False)
+        items.Add("Link to a website that is no longer existent", False)
+        items.Add("Link to an online dating website", True)
     End Sub
 End Class

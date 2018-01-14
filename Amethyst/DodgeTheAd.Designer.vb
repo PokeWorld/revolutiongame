@@ -40,11 +40,16 @@ Partial Class DodgeTheAd
         '
         'btnCheck
         '
+        Me.btnCheck.FlatAppearance.BorderSize = 0
+        Me.btnCheck.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
+        Me.btnCheck.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCheck.Font = New System.Drawing.Font("Lucida Console", 12.0!)
-        Me.btnCheck.Location = New System.Drawing.Point(449, 63)
+        Me.btnCheck.Location = New System.Drawing.Point(449, 53)
         Me.btnCheck.Name = "btnCheck"
-        Me.btnCheck.Size = New System.Drawing.Size(144, 23)
+        Me.btnCheck.Size = New System.Drawing.Size(144, 42)
         Me.btnCheck.TabIndex = 1
+        Me.btnCheck.TabStop = False
         Me.btnCheck.Text = "Check"
         Me.btnCheck.UseVisualStyleBackColor = True
         '
@@ -59,28 +64,27 @@ Partial Class DodgeTheAd
         '
         'comboxYesOrNo
         '
-        Me.comboxYesOrNo.FormattingEnabled = True
-        Me.comboxYesOrNo.Items.AddRange(New Object() {"Yes", "No"})
+        Me.comboxYesOrNo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.comboxYesOrNo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.comboxYesOrNo.Items.AddRange(New Object() {"Select An Option", "Yes", "No"})
         Me.comboxYesOrNo.Location = New System.Drawing.Point(12, 65)
         Me.comboxYesOrNo.Name = "comboxYesOrNo"
         Me.comboxYesOrNo.Size = New System.Drawing.Size(121, 21)
         Me.comboxYesOrNo.TabIndex = 4
-        Me.comboxYesOrNo.Text = "Select an option."
+        Me.comboxYesOrNo.TabStop = False
         '
         'DodgeTheAd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(605, 100)
         Me.Controls.Add(Me.comboxYesOrNo)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.btnCheck)
         Me.Controls.Add(Me.lblAd)
         Me.Name = "DodgeTheAd"
-        Me.Text = "Dodge The Ad"
+        Me.Size = New System.Drawing.Size(605, 100)
         Me.ResumeLayout(False)
         Me.PerformLayout()
-
 
     End Sub
 
@@ -88,5 +92,4 @@ Partial Class DodgeTheAd
     Friend WithEvents btnCheck As Button
     Friend WithEvents lblScore As Label
     Friend WithEvents comboxYesOrNo As ComboBox
-
 End Class
