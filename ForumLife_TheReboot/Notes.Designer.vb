@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Dummy
+Partial Class Notes
     Inherits System.Windows.Forms.UserControl
 
     'Form overrides dispose to clean up the component list.
@@ -37,10 +37,9 @@ Partial Class Dummy
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(363, 335)
         Me.Controls.Add(Me.TextBox1)
         Me.Name = "Dummy"
-        Me.Text = "Dummy"
+        Me.Size = New System.Drawing.Size(363, 335)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -61,7 +61,7 @@ Partial Class desktop
         '
         Me.DummyToolStripMenuItem.Name = "DummyToolStripMenuItem"
         Me.DummyToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.DummyToolStripMenuItem.Text = "Dummy"
+        Me.DummyToolStripMenuItem.Text = "Notes"
         '
         'SiteAnalyticsToolStripMenuItem
         '

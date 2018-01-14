@@ -1,7 +1,7 @@
 ﻿Public Class desktop
     Dim wm As New WindowManager
     Private Sub DummyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DummyToolStripMenuItem.Click
-        wm.createWindow(New Dummy, "Dummy")
+        wm.createWindow(New Notes, "Notes")
     End Sub
 
     Private Sub ShutdownToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShutdownToolStripMenuItem.Click
