@@ -55,6 +55,7 @@ Partial Class Form1
         'btnPlay
         '
         Me.btnPlay.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPlay.Font = New System.Drawing.Font("Lucida Console", 14.0!)
         Me.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnPlay.Location = New System.Drawing.Point(27, 103)
@@ -67,6 +68,7 @@ Partial Class Form1
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Lucida Console", 14.0!)
         Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
         Me.btnExit.Location = New System.Drawing.Point(27, 149)
