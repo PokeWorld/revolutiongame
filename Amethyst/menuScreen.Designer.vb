@@ -58,7 +58,7 @@ Partial Class menuScreen
         '
         'btnPlay
         '
-        Me.btnPlay.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnPlay.BackColor = System.Drawing.Color.Purple
         Me.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPlay.Font = New System.Drawing.Font("Lucida Console", 14.0!)
         Me.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -71,7 +71,7 @@ Partial Class menuScreen
         '
         'btnExit
         '
-        Me.btnExit.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnExit.BackColor = System.Drawing.Color.Purple
         Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnExit.Font = New System.Drawing.Font("Lucida Console", 14.0!)
         Me.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight
@@ -89,11 +89,11 @@ Partial Class menuScreen
         '
         'btnGraphic
         '
-        Me.btnGraphic.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnGraphic.BackColor = System.Drawing.Color.Purple
         Me.btnGraphic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGraphic.Font = New System.Drawing.Font("Lucida Console", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGraphic.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGraphic.Location = New System.Drawing.Point(277, 149)
+        Me.btnGraphic.Location = New System.Drawing.Point(277, 103)
         Me.btnGraphic.Name = "btnGraphic"
         Me.btnGraphic.Size = New System.Drawing.Size(244, 40)
         Me.btnGraphic.TabIndex = 5
@@ -105,7 +105,7 @@ Partial Class menuScreen
         Me.lblGraphic.AutoSize = True
         Me.lblGraphic.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGraphic.ForeColor = System.Drawing.Color.White
-        Me.lblGraphic.Location = New System.Drawing.Point(309, 103)
+        Me.lblGraphic.Location = New System.Drawing.Point(23, 67)
         Me.lblGraphic.Name = "lblGraphic"
         Me.lblGraphic.Size = New System.Drawing.Size(196, 19)
         Me.lblGraphic.TabIndex = 6
@@ -116,7 +116,7 @@ Partial Class menuScreen
         Me.lblGraphicValue.AutoSize = True
         Me.lblGraphicValue.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblGraphicValue.ForeColor = System.Drawing.Color.White
-        Me.lblGraphicValue.Location = New System.Drawing.Point(371, 127)
+        Me.lblGraphicValue.Location = New System.Drawing.Point(225, 67)
         Me.lblGraphicValue.Name = "lblGraphicValue"
         Me.lblGraphicValue.Size = New System.Drawing.Size(64, 19)
         Me.lblGraphicValue.TabIndex = 7
@@ -126,11 +126,11 @@ Partial Class menuScreen
         '
         Me.tmGraphic.Interval = 1
         '
-        'Form1
+        'menuScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.BackColor = System.Drawing.Color.DarkMagenta
         Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.lblGraphicValue)
         Me.Controls.Add(Me.lblGraphic)
@@ -140,7 +140,7 @@ Partial Class menuScreen
         Me.Controls.Add(Me.lblAdvice)
         Me.Controls.Add(Me.LblAmethyst)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
+        Me.Name = "menuScreen"
         Me.Text = "Project Amethyst"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)

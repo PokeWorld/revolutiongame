@@ -96,18 +96,17 @@
     <Compile Include="DodgeTheAd.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="menuScreen.Designer.vb">
+      <DependentUpon>menuScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="menuScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Notes.Designer.vb">
       <DependentUpon>Notes.vb</DependentUpon>
     </Compile>
     <Compile Include="Notes.vb">
       <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Form1.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -151,11 +150,11 @@
     <EmbeddedResource Include="DodgeTheAd.resx">
       <DependentUpon>DodgeTheAd.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="menuScreen.resx">
+      <DependentUpon>menuScreen.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Notes.resx">
       <DependentUpon>Notes.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
