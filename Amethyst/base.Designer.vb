@@ -82,11 +82,11 @@ Partial Class base
         '
         Me.lblProg.AutoSize = True
         Me.lblProg.BackColor = System.Drawing.Color.White
-        Me.lblProg.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProg.Font = New System.Drawing.Font("Lucida Console", 12.0!)
         Me.lblProg.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.lblProg.Location = New System.Drawing.Point(12, 5)
+        Me.lblProg.Location = New System.Drawing.Point(12, 7)
         Me.lblProg.Name = "lblProg"
-        Me.lblProg.Size = New System.Drawing.Size(111, 18)
+        Me.lblProg.Size = New System.Drawing.Size(118, 16)
         Me.lblProg.TabIndex = 0
         Me.lblProg.Text = "ProgramName"
         '

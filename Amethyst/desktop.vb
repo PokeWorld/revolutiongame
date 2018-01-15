@@ -30,10 +30,6 @@
         lblMoney.Text = "Money: $" & My.Settings.CashCount
     End Sub
 
-    Private Sub tsmAbout_Click(sender As Object, e As EventArgs) Handles tsmAbout.Click
-        AboutAmethyst.Show()
-    End Sub
-
     Private Sub tsmNotes_Click(sender As Object, e As EventArgs) Handles tsmNotes.Click
         wm.createWindow(New Notes, "Notes")
     End Sub
@@ -43,11 +39,11 @@
     End Sub
 
     Private Sub tsmSiteController_Click(sender As Object, e As EventArgs) Handles tsmSiteController.Click
-        wm.createWindow(New SiteControl, "Site Control")
+        wm.createWindow(New SiteControl, "Control Panel")
     End Sub
 
     Private Sub tsmSiteAnaylytics_Click(sender As Object, e As EventArgs) Handles tsmSiteAnaylytics.Click
-        wm.createWindow(New SiteAnalytics, "Site Analytics")
+        wm.createWindow(New SiteAnalytics, "Analytics")
     End Sub
 
     Private Sub tsmDodgeTheAd_Click(sender As Object, e As EventArgs) Handles tsmDodgeTheAd.Click

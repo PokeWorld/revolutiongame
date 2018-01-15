@@ -13,14 +13,6 @@
         Me.Close()
     End Sub
 
-    Private Sub btnGraphic_Click(sender As Object, e As EventArgs)
-        If My.Settings.graphicsFriendly = True Then
-            My.Settings.graphicsFriendly = False
-        Else
-            My.Settings.graphicsFriendly = True
-        End If
-    End Sub
-
     Private Sub tmText_Tick(sender As Object, e As EventArgs) Handles tmText.Tick
         Dim randomvalue = CInt(Math.Floor((10) * Rnd()))
         Select Case CInt(Math.Floor((10) * Rnd()))
