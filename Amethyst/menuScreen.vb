@@ -13,7 +13,7 @@
         Me.Close()
     End Sub
 
-    Private Sub btnGraphic_Click(sender As Object, e As EventArgs) Handles btnGraphic.Click
+    Private Sub btnGraphic_Click(sender As Object, e As EventArgs)
         If My.Settings.graphicsFriendly = True Then
             My.Settings.graphicsFriendly = False
         Else
@@ -48,6 +48,10 @@
     End Sub
 
     Private Sub tmGraphic_Tick(sender As Object, e As EventArgs) Handles tmGraphic.Tick
-        lblGraphicValue.Text = CType(My.Settings.graphicsFriendly, String)
+        If My.Settings.DayCount > 730 Then
+            My.Settings.graphicsFriendly = False
+        Else
+            My.Settings.graphicsFriendly = True
+        End If
     End Sub
 End Class

@@ -28,9 +28,6 @@ Partial Class MenuScreen
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.tmText = New System.Windows.Forms.Timer(Me.components)
-        Me.btnGraphic = New System.Windows.Forms.Button()
-        Me.lblGraphic = New System.Windows.Forms.Label()
-        Me.lblGraphicValue = New System.Windows.Forms.Label()
         Me.tmGraphic = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
@@ -87,60 +84,22 @@ Partial Class MenuScreen
         Me.tmText.Enabled = True
         Me.tmText.Interval = 10000
         '
-        'btnGraphic
-        '
-        Me.btnGraphic.BackColor = System.Drawing.Color.Purple
-        Me.btnGraphic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnGraphic.Font = New System.Drawing.Font("Lucida Console", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGraphic.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGraphic.Location = New System.Drawing.Point(277, 103)
-        Me.btnGraphic.Name = "btnGraphic"
-        Me.btnGraphic.Size = New System.Drawing.Size(244, 40)
-        Me.btnGraphic.TabIndex = 5
-        Me.btnGraphic.Text = "Toggle Graphics Friendly Mode"
-        Me.btnGraphic.UseVisualStyleBackColor = False
-        '
-        'lblGraphic
-        '
-        Me.lblGraphic.AutoSize = True
-        Me.lblGraphic.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGraphic.ForeColor = System.Drawing.Color.White
-        Me.lblGraphic.Location = New System.Drawing.Point(23, 67)
-        Me.lblGraphic.Name = "lblGraphic"
-        Me.lblGraphic.Size = New System.Drawing.Size(196, 19)
-        Me.lblGraphic.TabIndex = 6
-        Me.lblGraphic.Text = "Graphic Friendly:"
-        '
-        'lblGraphicValue
-        '
-        Me.lblGraphicValue.AutoSize = True
-        Me.lblGraphicValue.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblGraphicValue.ForeColor = System.Drawing.Color.White
-        Me.lblGraphicValue.Location = New System.Drawing.Point(225, 67)
-        Me.lblGraphicValue.Name = "lblGraphicValue"
-        Me.lblGraphicValue.Size = New System.Drawing.Size(64, 19)
-        Me.lblGraphicValue.TabIndex = 7
-        Me.lblGraphicValue.Text = "False"
-        '
         'tmGraphic
         '
         Me.tmGraphic.Interval = 1
         '
-        'menuScreen
+        'MenuScreen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DarkMagenta
         Me.ClientSize = New System.Drawing.Size(800, 600)
-        Me.Controls.Add(Me.lblGraphicValue)
-        Me.Controls.Add(Me.lblGraphic)
-        Me.Controls.Add(Me.btnGraphic)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.lblAdvice)
         Me.Controls.Add(Me.LblAmethyst)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "menuScreen"
+        Me.Name = "MenuScreen"
         Me.Text = "Project Amethyst"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ResumeLayout(False)
@@ -153,8 +112,5 @@ Partial Class MenuScreen
     Friend WithEvents btnPlay As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents tmText As Timer
-    Friend WithEvents btnGraphic As Button
-    Friend WithEvents lblGraphic As Label
-    Friend WithEvents lblGraphicValue As Label
     Friend WithEvents tmGraphic As Timer
 End Class
