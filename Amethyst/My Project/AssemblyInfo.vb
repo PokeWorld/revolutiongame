@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Project Amethyst")>
-<Assembly: AssemblyDescription("Amethyst is a game developed in the Visual Basic.NET and uses .NET Framework 4.5.2")>
+<Assembly: AssemblyDescription("Amethyst is a game developed in the Visual Basic.NET language and uses the .NET Framework 4.5.2")>
 <Assembly: AssemblyCompany("Pallet Games")>
 <Assembly: AssemblyProduct("Amethyst Tech Demo 1")>
 <Assembly: AssemblyCopyright("Copyright ©  2018")>

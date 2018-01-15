@@ -1,4 +1,4 @@
-﻿Public Class menuScreen
+﻿Public Class MenuScreen
     Private Sub menuScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         WindowState = FormWindowState.Maximized
         tmText.Start()
@@ -48,6 +48,6 @@
     End Sub
 
     Private Sub tmGraphic_Tick(sender As Object, e As EventArgs) Handles tmGraphic.Tick
-        lblGraphicValue.Text = My.Settings.graphicsFriendly
+        lblGraphicValue.Text = CType(My.Settings.graphicsFriendly, String)
     End Sub
 End Class

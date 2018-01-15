@@ -1,4 +1,4 @@
-﻿Public Class notes
+﻿Public Class Notes
     Private Sub rtbText_TextChanged(sender As Object, e As EventArgs) Handles rtbText.TextChanged
         My.Settings.dummyText = rtbText.Text
     End Sub

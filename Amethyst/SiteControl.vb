@@ -1,4 +1,4 @@
-﻿Public Class siteControl
+﻿Public Class SiteControl
     Private Sub btnSetName_Click(sender As Object, e As EventArgs) Handles btnSetName.Click
         My.Settings.SiteName = txtbxsetSiteName.Text
     End Sub

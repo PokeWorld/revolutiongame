@@ -43,11 +43,11 @@
     End Sub
 
     Private Sub tsmSiteController_Click(sender As Object, e As EventArgs) Handles tsmSiteController.Click
-        wm.createWindow(New siteControl, "Site Control")
+        wm.createWindow(New SiteControl, "Site Control")
     End Sub
 
     Private Sub tsmSiteAnaylytics_Click(sender As Object, e As EventArgs) Handles tsmSiteAnaylytics.Click
-        wm.createWindow(New siteAnalytics, "Site Analytics")
+        wm.createWindow(New SiteAnalytics, "Site Analytics")
     End Sub
 
     Private Sub tsmDodgeTheAd_Click(sender As Object, e As EventArgs) Handles tsmDodgeTheAd.Click

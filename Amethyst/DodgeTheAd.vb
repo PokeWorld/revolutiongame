@@ -1,4 +1,4 @@
-﻿Partial Class dodgeTheAd
+﻿Partial Class DodgeTheAd
     Dim score As Integer = 0
     Dim items As Dictionary(Of String, Boolean) = New Dictionary(Of String, Boolean)
     Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
@@ -17,7 +17,7 @@
             My.Settings.CashCount += 1
         End If
         comboxYesOrNo.SelectedIndex = 0
-        lblScore.Text = score
+        lblScore.Text = CType(score, String)
         lblAd.Text = items.Keys(CInt(Math.Floor(items.Count * Rnd())))
     End Sub
 
