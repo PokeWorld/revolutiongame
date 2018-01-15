@@ -1,6 +1,8 @@
-﻿Public Class Form1
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.WindowState = FormWindowState.Maximized
+﻿Public Class menuScreen
+    Private Sub menuScreen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        WindowState = FormWindowState.Maximized
+        tmText.Start()
+        tmGraphic.Start()
     End Sub
 
     Private Sub btnPlay_Click(sender As Object, e As EventArgs) Handles btnPlay.Click
@@ -11,7 +13,15 @@
         Me.Close()
     End Sub
 
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    Private Sub btnGraphic_Click(sender As Object, e As EventArgs) Handles btnGraphic.Click
+        If My.Settings.graphicsFriendly = True Then
+            My.Settings.graphicsFriendly = False
+        Else
+            My.Settings.graphicsFriendly = True
+        End If
+    End Sub
+
+    Private Sub tmText_Tick(sender As Object, e As EventArgs) Handles tmText.Tick
         Dim randomvalue = CInt(Math.Floor((10) * Rnd()))
         Select Case CInt(Math.Floor((10) * Rnd()))
             Case 10
@@ -35,5 +45,9 @@
             Case Else
                 lblAdvice.Text = "hi im out of ideas"
         End Select
+    End Sub
+
+    Private Sub tmGraphic_Tick(sender As Object, e As EventArgs) Handles tmGraphic.Tick
+        lblGraphicValue.Text = My.Settings.graphicsFriendly
     End Sub
 End Class

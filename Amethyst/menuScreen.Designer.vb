@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class menuScreen
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,7 +27,11 @@ Partial Class Form1
         Me.lblAdvice = New System.Windows.Forms.Label()
         Me.btnPlay = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmText = New System.Windows.Forms.Timer(Me.components)
+        Me.btnGraphic = New System.Windows.Forms.Button()
+        Me.lblGraphic = New System.Windows.Forms.Label()
+        Me.lblGraphicValue = New System.Windows.Forms.Label()
+        Me.tmGraphic = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'LblAmethyst
@@ -78,10 +82,49 @@ Partial Class Form1
         Me.btnExit.Text = "Close Game"
         Me.btnExit.UseVisualStyleBackColor = False
         '
-        'Timer1
+        'tmText
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 10000
+        Me.tmText.Enabled = True
+        Me.tmText.Interval = 10000
+        '
+        'btnGraphic
+        '
+        Me.btnGraphic.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.btnGraphic.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGraphic.Font = New System.Drawing.Font("Lucida Console", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGraphic.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnGraphic.Location = New System.Drawing.Point(277, 149)
+        Me.btnGraphic.Name = "btnGraphic"
+        Me.btnGraphic.Size = New System.Drawing.Size(244, 40)
+        Me.btnGraphic.TabIndex = 5
+        Me.btnGraphic.Text = "Toggle Graphics Friendly Mode"
+        Me.btnGraphic.UseVisualStyleBackColor = False
+        '
+        'lblGraphic
+        '
+        Me.lblGraphic.AutoSize = True
+        Me.lblGraphic.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGraphic.ForeColor = System.Drawing.Color.White
+        Me.lblGraphic.Location = New System.Drawing.Point(309, 103)
+        Me.lblGraphic.Name = "lblGraphic"
+        Me.lblGraphic.Size = New System.Drawing.Size(196, 19)
+        Me.lblGraphic.TabIndex = 6
+        Me.lblGraphic.Text = "Graphic Friendly:"
+        '
+        'lblGraphicValue
+        '
+        Me.lblGraphicValue.AutoSize = True
+        Me.lblGraphicValue.Font = New System.Drawing.Font("Lucida Console", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblGraphicValue.ForeColor = System.Drawing.Color.White
+        Me.lblGraphicValue.Location = New System.Drawing.Point(371, 127)
+        Me.lblGraphicValue.Name = "lblGraphicValue"
+        Me.lblGraphicValue.Size = New System.Drawing.Size(64, 19)
+        Me.lblGraphicValue.TabIndex = 7
+        Me.lblGraphicValue.Text = "False"
+        '
+        'tmGraphic
+        '
+        Me.tmGraphic.Interval = 1
         '
         'Form1
         '
@@ -89,6 +132,9 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.lblGraphicValue)
+        Me.Controls.Add(Me.lblGraphic)
+        Me.Controls.Add(Me.btnGraphic)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnPlay)
         Me.Controls.Add(Me.lblAdvice)
@@ -106,5 +152,9 @@ Partial Class Form1
     Friend WithEvents lblAdvice As Label
     Friend WithEvents btnPlay As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents tmText As Timer
+    Friend WithEvents btnGraphic As Button
+    Friend WithEvents lblGraphic As Label
+    Friend WithEvents lblGraphicValue As Label
+    Friend WithEvents tmGraphic As Timer
 End Class

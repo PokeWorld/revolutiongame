@@ -23,107 +23,111 @@ Partial Class base
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.content = New System.Windows.Forms.Panel()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Panel1.SuspendLayout()
+        Me.pnlTitle = New System.Windows.Forms.Panel()
+        Me.btnMin = New System.Windows.Forms.Button()
+        Me.btnClose = New System.Windows.Forms.Button()
+        Me.lblProg = New System.Windows.Forms.Label()
+        Me.pnlContent = New System.Windows.Forms.Panel()
+        Me.tmClose = New System.Windows.Forms.Timer(Me.components)
+        Me.tmOpen = New System.Windows.Forms.Timer(Me.components)
+        Me.pnlTitle.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Panel1
+        'pnlTitle
         '
-        Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(500, 30)
-        Me.Panel1.TabIndex = 0
+        Me.pnlTitle.BackColor = System.Drawing.Color.White
+        Me.pnlTitle.Controls.Add(Me.btnMin)
+        Me.pnlTitle.Controls.Add(Me.btnClose)
+        Me.pnlTitle.Controls.Add(Me.lblProg)
+        Me.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pnlTitle.Location = New System.Drawing.Point(0, 0)
+        Me.pnlTitle.Name = "pnlTitle"
+        Me.pnlTitle.Size = New System.Drawing.Size(500, 30)
+        Me.pnlTitle.TabIndex = 0
         '
-        'Button2
+        'btnMin
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Location = New System.Drawing.Point(440, 0)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(30, 30)
-        Me.Button2.TabIndex = 2
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "-"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnMin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnMin.BackColor = System.Drawing.Color.Yellow
+        Me.btnMin.FlatAppearance.BorderSize = 0
+        Me.btnMin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnMin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMin.Location = New System.Drawing.Point(440, 0)
+        Me.btnMin.Name = "btnMin"
+        Me.btnMin.Size = New System.Drawing.Size(30, 30)
+        Me.btnMin.TabIndex = 2
+        Me.btnMin.TabStop = False
+        Me.btnMin.Text = "-"
+        Me.btnMin.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnClose
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.Color.Maroon
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Silver
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Button1.Location = New System.Drawing.Point(470, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(30, 30)
-        Me.Button1.TabIndex = 1
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "X"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnClose.BackColor = System.Drawing.Color.Red
+        Me.btnClose.FlatAppearance.BorderSize = 0
+        Me.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClose.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.btnClose.Location = New System.Drawing.Point(470, 0)
+        Me.btnClose.Name = "btnClose"
+        Me.btnClose.Size = New System.Drawing.Size(30, 30)
+        Me.btnClose.TabIndex = 1
+        Me.btnClose.TabStop = False
+        Me.btnClose.Text = "X"
+        Me.btnClose.UseVisualStyleBackColor = False
         '
-        'Label1
+        'lblProg
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(12, 5)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(111, 18)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ProgramName"
+        Me.lblProg.AutoSize = True
+        Me.lblProg.BackColor = System.Drawing.Color.White
+        Me.lblProg.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblProg.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.lblProg.Location = New System.Drawing.Point(12, 5)
+        Me.lblProg.Name = "lblProg"
+        Me.lblProg.Size = New System.Drawing.Size(111, 18)
+        Me.lblProg.TabIndex = 0
+        Me.lblProg.Text = "ProgramName"
         '
-        'content
+        'pnlContent
         '
-        Me.content.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.content.Location = New System.Drawing.Point(0, 30)
-        Me.content.Name = "content"
-        Me.content.Size = New System.Drawing.Size(500, 369)
-        Me.content.TabIndex = 1
+        Me.pnlContent.BackColor = System.Drawing.Color.White
+        Me.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnlContent.Location = New System.Drawing.Point(0, 30)
+        Me.pnlContent.Name = "pnlContent"
+        Me.pnlContent.Size = New System.Drawing.Size(500, 369)
+        Me.pnlContent.TabIndex = 1
         '
-        'Timer1
+        'tmClose
         '
-        Me.Timer1.Interval = 1
+        Me.tmClose.Interval = 1
         '
-        'Timer2
+        'tmOpen
         '
-        Me.Timer2.Interval = 1
+        Me.tmOpen.Interval = 1
         '
         'base
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(500, 399)
-        Me.Controls.Add(Me.content)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.pnlContent)
+        Me.Controls.Add(Me.pnlTitle)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "base"
         Me.Text = "base"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.pnlTitle.ResumeLayout(False)
+        Me.pnlTitle.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
-    Friend WithEvents content As Panel
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents Timer2 As Timer
+    Friend WithEvents pnlTitle As Panel
+    Friend WithEvents btnMin As Button
+    Friend WithEvents btnClose As Button
+    Friend WithEvents lblProg As Label
+    Friend WithEvents pnlContent As Panel
+    Friend WithEvents tmClose As Timer
+    Friend WithEvents tmOpen As Timer
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class SiteAnalytics
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class siteAnalytics
     Inherits System.Windows.Forms.UserControl
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,11 @@ Partial Class SiteAnalytics
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.lblSiteName = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmData = New System.Windows.Forms.Timer(Me.components)
         Me.lblAdIntensity = New System.Windows.Forms.Label()
         Me.lblUserCount = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -38,10 +38,10 @@ Partial Class SiteAnalytics
         Me.lblSiteName.TabIndex = 0
         Me.lblSiteName.Text = "Network Name: null"
         '
-        'Timer1
+        'tmData
         '
-        Me.Timer1.Enabled = True
-        Me.Timer1.Interval = 10
+        Me.tmData.Enabled = True
+        Me.tmData.Interval = 10
         '
         'lblAdIntensity
         '
@@ -61,23 +61,22 @@ Partial Class SiteAnalytics
         Me.lblUserCount.TabIndex = 2
         Me.lblUserCount.Text = "Users: null"
         '
-        'SiteAnalytics
+        'siteAnalytics
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(747, 491)
         Me.Controls.Add(Me.lblUserCount)
         Me.Controls.Add(Me.lblAdIntensity)
         Me.Controls.Add(Me.lblSiteName)
-        Me.Name = "SiteAnalytics"
-        Me.Text = "Site Analytics"
+        Me.Name = "siteAnalytics"
+        Me.Size = New System.Drawing.Size(747, 491)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblSiteName As Label
-    Friend WithEvents Timer1 As Timer
+    Friend WithEvents tmData As Timer
     Friend WithEvents lblAdIntensity As Label
     Friend WithEvents lblUserCount As Label
 End Class

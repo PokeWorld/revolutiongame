@@ -25,18 +25,18 @@ Partial Class desktop
         Me.components = New System.ComponentModel.Container()
         Me.panelBar = New System.Windows.Forms.MenuStrip()
         Me.MenuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DummyToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SiteAnalyticsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SiteControllerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DodgeTheAdToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmNotes = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmSiteAnaylytics = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmSiteController = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmDodgeTheAd = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ShutdownToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutAmethystToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmShutdown = New System.Windows.Forms.ToolStripMenuItem()
+        Me.tsmAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnDayAdvance = New System.Windows.Forms.Button()
         Me.lblDayCount = New System.Windows.Forms.Label()
         Me.btnRestart = New System.Windows.Forms.Button()
         Me.lblMoney = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.tmData = New System.Windows.Forms.Timer(Me.components)
         Me.panelBar.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,51 +52,51 @@ Partial Class desktop
         '
         'MenuToolStripMenuItem
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DummyToolStripMenuItem, Me.SiteAnalyticsToolStripMenuItem, Me.SiteControllerToolStripMenuItem, Me.DodgeTheAdToolStripMenuItem, Me.ToolStripSeparator1, Me.ShutdownToolStripMenuItem, Me.AboutAmethystToolStripMenuItem})
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmNotes, Me.tsmSiteAnaylytics, Me.tsmSiteController, Me.tsmDodgeTheAd, Me.ToolStripSeparator1, Me.tsmShutdown, Me.tsmAbout})
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
         Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
         Me.MenuToolStripMenuItem.Text = "Menu"
         '
-        'DummyToolStripMenuItem
+        'tsmNotes
         '
-        Me.DummyToolStripMenuItem.Name = "DummyToolStripMenuItem"
-        Me.DummyToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.DummyToolStripMenuItem.Text = "Notes"
+        Me.tsmNotes.Name = "tsmNotes"
+        Me.tsmNotes.Size = New System.Drawing.Size(161, 22)
+        Me.tsmNotes.Text = "Notes"
         '
-        'SiteAnalyticsToolStripMenuItem
+        'tsmSiteAnaylytics
         '
-        Me.SiteAnalyticsToolStripMenuItem.Name = "SiteAnalyticsToolStripMenuItem"
-        Me.SiteAnalyticsToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.SiteAnalyticsToolStripMenuItem.Text = "Site Analytics"
+        Me.tsmSiteAnaylytics.Name = "tsmSiteAnaylytics"
+        Me.tsmSiteAnaylytics.Size = New System.Drawing.Size(161, 22)
+        Me.tsmSiteAnaylytics.Text = "Site Analytics"
         '
-        'SiteControllerToolStripMenuItem
+        'tsmSiteController
         '
-        Me.SiteControllerToolStripMenuItem.Name = "SiteControllerToolStripMenuItem"
-        Me.SiteControllerToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.SiteControllerToolStripMenuItem.Text = "Site Controller"
+        Me.tsmSiteController.Name = "tsmSiteController"
+        Me.tsmSiteController.Size = New System.Drawing.Size(161, 22)
+        Me.tsmSiteController.Text = "Site Controller"
         '
-        'DodgeTheAdToolStripMenuItem
+        'tsmDodgeTheAd
         '
-        Me.DodgeTheAdToolStripMenuItem.Name = "DodgeTheAdToolStripMenuItem"
-        Me.DodgeTheAdToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.DodgeTheAdToolStripMenuItem.Text = "Dodge The Ad"
+        Me.tsmDodgeTheAd.Name = "tsmDodgeTheAd"
+        Me.tsmDodgeTheAd.Size = New System.Drawing.Size(161, 22)
+        Me.tsmDodgeTheAd.Text = "Dodge The Ad"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(158, 6)
         '
-        'ShutdownToolStripMenuItem
+        'tsmShutdown
         '
-        Me.ShutdownToolStripMenuItem.Name = "ShutdownToolStripMenuItem"
-        Me.ShutdownToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.ShutdownToolStripMenuItem.Text = "Shutdown"
+        Me.tsmShutdown.Name = "tsmShutdown"
+        Me.tsmShutdown.Size = New System.Drawing.Size(161, 22)
+        Me.tsmShutdown.Text = "Shutdown"
         '
-        'AboutAmethystToolStripMenuItem
+        'tsmAbout
         '
-        Me.AboutAmethystToolStripMenuItem.Name = "AboutAmethystToolStripMenuItem"
-        Me.AboutAmethystToolStripMenuItem.Size = New System.Drawing.Size(161, 22)
-        Me.AboutAmethystToolStripMenuItem.Text = "About Amethyst"
+        Me.tsmAbout.Name = "tsmAbout"
+        Me.tsmAbout.Size = New System.Drawing.Size(161, 22)
+        Me.tsmAbout.Text = "About Amethyst"
         '
         'btnDayAdvance
         '
@@ -134,9 +134,9 @@ Partial Class desktop
         Me.lblMoney.TabIndex = 4
         Me.lblMoney.Text = "Money: $NaN"
         '
-        'Timer1
+        'tmData
         '
-        Me.Timer1.Enabled = True
+        Me.tmData.Enabled = True
         '
         'desktop
         '
@@ -163,16 +163,16 @@ Partial Class desktop
 
     Friend WithEvents panelBar As MenuStrip
     Friend WithEvents MenuToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DummyToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SiteControllerToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ShutdownToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SiteAnalyticsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tsmNotes As ToolStripMenuItem
+    Friend WithEvents tsmSiteController As ToolStripMenuItem
+    Friend WithEvents tsmShutdown As ToolStripMenuItem
+    Friend WithEvents tsmSiteAnaylytics As ToolStripMenuItem
     Friend WithEvents btnDayAdvance As Button
     Friend WithEvents lblDayCount As Label
     Friend WithEvents btnRestart As Button
     Friend WithEvents lblMoney As Label
-    Friend WithEvents DodgeTheAdToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tsmDodgeTheAd As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents AboutAmethystToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents tmData As Timer
+    Friend WithEvents tsmAbout As ToolStripMenuItem
 End Class

@@ -1,4 +1,4 @@
-﻿Partial Class DodgeTheAd
+﻿Partial Class dodgeTheAd
     Dim score As Integer = 0
     Dim items As Dictionary(Of String, Boolean) = New Dictionary(Of String, Boolean)
     Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
@@ -22,7 +22,7 @@
     End Sub
 
 
-    Private Sub DodgeTheAd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub dodgeTheAd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         comboxYesOrNo.SelectedIndex = 0
         items.Add("Ad for the newest version of Microsoft Windows", True)
         items.Add("Ad for the new Facebook network", True)
