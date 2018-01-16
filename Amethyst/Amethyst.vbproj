@@ -142,6 +142,12 @@
     <Compile Include="SiteControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UpgradeShop.Designer.vb">
+      <DependentUpon>UpgradeShop.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeShop.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="WindowManager.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SiteControl.resx">
       <DependentUpon>SiteControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeShop.resx">
+      <DependentUpon>UpgradeShop.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
