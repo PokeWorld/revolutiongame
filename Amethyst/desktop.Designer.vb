@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class desktop
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class desktop
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.panelBar = New System.Windows.Forms.MenuStrip()
@@ -31,7 +31,6 @@ Partial Class desktop
         Me.tsmDodgeTheAd = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.tsmShutdown = New System.Windows.Forms.ToolStripMenuItem()
-        Me.tsmAbout = New System.Windows.Forms.ToolStripMenuItem()
         Me.btnDayAdvance = New System.Windows.Forms.Button()
         Me.lblDayCount = New System.Windows.Forms.Label()
         Me.btnRestart = New System.Windows.Forms.Button()
@@ -52,9 +51,10 @@ Partial Class desktop
         '
         'MenuToolStripMenuItem
         '
-        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmNotes, Me.tsmSiteAnaylytics, Me.tsmSiteController, Me.tsmDodgeTheAd, Me.ToolStripSeparator1, Me.tsmShutdown, Me.tsmAbout})
+        Me.MenuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsmNotes, Me.tsmSiteAnaylytics, Me.tsmSiteController, Me.tsmDodgeTheAd, Me.ToolStripSeparator1, Me.tsmShutdown})
+        Me.MenuToolStripMenuItem.Font = New System.Drawing.Font("Lucida Console", 9.0!)
         Me.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem"
-        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(50, 20)
+        Me.MenuToolStripMenuItem.Size = New System.Drawing.Size(45, 20)
         Me.MenuToolStripMenuItem.Text = "Menu"
         '
         'tsmNotes
@@ -67,13 +67,13 @@ Partial Class desktop
         '
         Me.tsmSiteAnaylytics.Name = "tsmSiteAnaylytics"
         Me.tsmSiteAnaylytics.Size = New System.Drawing.Size(161, 22)
-        Me.tsmSiteAnaylytics.Text = "Site Analytics"
+        Me.tsmSiteAnaylytics.Text = "Analytics"
         '
         'tsmSiteController
         '
         Me.tsmSiteController.Name = "tsmSiteController"
         Me.tsmSiteController.Size = New System.Drawing.Size(161, 22)
-        Me.tsmSiteController.Text = "Site Controller"
+        Me.tsmSiteController.Text = "Control Panel"
         '
         'tsmDodgeTheAd
         '
@@ -92,17 +92,12 @@ Partial Class desktop
         Me.tsmShutdown.Size = New System.Drawing.Size(161, 22)
         Me.tsmShutdown.Text = "Shutdown"
         '
-        'tsmAbout
-        '
-        Me.tsmAbout.Name = "tsmAbout"
-        Me.tsmAbout.Size = New System.Drawing.Size(161, 22)
-        Me.tsmAbout.Text = "About Amethyst"
-        '
         'btnDayAdvance
         '
-        Me.btnDayAdvance.Location = New System.Drawing.Point(66, 8)
+        Me.btnDayAdvance.Font = New System.Drawing.Font("Lucida Console", 9.0!)
+        Me.btnDayAdvance.Location = New System.Drawing.Point(80, 8)
         Me.btnDayAdvance.Name = "btnDayAdvance"
-        Me.btnDayAdvance.Size = New System.Drawing.Size(82, 23)
+        Me.btnDayAdvance.Size = New System.Drawing.Size(100, 23)
         Me.btnDayAdvance.TabIndex = 1
         Me.btnDayAdvance.Text = "Day Advance"
         Me.btnDayAdvance.UseVisualStyleBackColor = True
@@ -110,17 +105,19 @@ Partial Class desktop
         'lblDayCount
         '
         Me.lblDayCount.AutoSize = True
+        Me.lblDayCount.Font = New System.Drawing.Font("Lucida Console", 8.25!)
         Me.lblDayCount.Location = New System.Drawing.Point(13, 13)
         Me.lblDayCount.Name = "lblDayCount"
-        Me.lblDayCount.Size = New System.Drawing.Size(47, 13)
+        Me.lblDayCount.Size = New System.Drawing.Size(61, 11)
         Me.lblDayCount.TabIndex = 2
         Me.lblDayCount.Text = "Day Null"
         '
         'btnRestart
         '
-        Me.btnRestart.Location = New System.Drawing.Point(154, 8)
+        Me.btnRestart.Font = New System.Drawing.Font("Lucida Console", 9.0!)
+        Me.btnRestart.Location = New System.Drawing.Point(186, 8)
         Me.btnRestart.Name = "btnRestart"
-        Me.btnRestart.Size = New System.Drawing.Size(82, 23)
+        Me.btnRestart.Size = New System.Drawing.Size(93, 23)
         Me.btnRestart.TabIndex = 3
         Me.btnRestart.Text = "Reset Game"
         Me.btnRestart.UseVisualStyleBackColor = True
@@ -128,9 +125,10 @@ Partial Class desktop
         'lblMoney
         '
         Me.lblMoney.AutoSize = True
+        Me.lblMoney.Font = New System.Drawing.Font("Lucida Console", 8.25!)
         Me.lblMoney.Location = New System.Drawing.Point(13, 37)
         Me.lblMoney.Name = "lblMoney"
-        Me.lblMoney.Size = New System.Drawing.Size(73, 13)
+        Me.lblMoney.Size = New System.Drawing.Size(82, 11)
         Me.lblMoney.TabIndex = 4
         Me.lblMoney.Text = "Money: $NaN"
         '
@@ -174,5 +172,4 @@ Partial Class desktop
     Friend WithEvents tsmDodgeTheAd As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents tmData As Timer
-    Friend WithEvents tsmAbout As ToolStripMenuItem
 End Class
