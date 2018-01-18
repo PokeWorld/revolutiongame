@@ -76,7 +76,7 @@ namespace Amethyst
                     btnExit.BackColor = System.Drawing.Color.DeepPink;
                     break;
                 case 2:
-                    lblAdvice.Text = "Tech Demo 1. (c) Pallet Games";
+                    lblAdvice.Text = "Tech Demo 1. (c) Pallet";
                     this.BackColor = System.Drawing.Color.Teal;
                     btnPlay.BackColor = System.Drawing.Color.Teal;
                     btnExit.BackColor = System.Drawing.Color.Teal;
