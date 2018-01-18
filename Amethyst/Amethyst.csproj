@@ -135,6 +135,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="SiteAnalytics.resx">
       <DependentUpon>SiteAnalytics.cs</DependentUpon>
@@ -149,6 +150,18 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AmethystLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AnalyticsNew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ControlPanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DodgeTheAd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

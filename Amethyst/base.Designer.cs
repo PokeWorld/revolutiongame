@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlTitle = new System.Windows.Forms.Panel();
+            this.pbIcon = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.lblProg = new System.Windows.Forms.Label();
@@ -37,11 +38,13 @@
             this.tmClose = new System.Windows.Forms.Timer(this.components);
             this.tmOpen = new System.Windows.Forms.Timer(this.components);
             this.pnlTitle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitle
             // 
             this.pnlTitle.BackColor = System.Drawing.Color.White;
+            this.pnlTitle.Controls.Add(this.pbIcon);
             this.pnlTitle.Controls.Add(this.btnMin);
             this.pnlTitle.Controls.Add(this.btnClose);
             this.pnlTitle.Controls.Add(this.lblProg);
@@ -53,6 +56,15 @@
             this.pnlTitle.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseDown);
             this.pnlTitle.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseMove);
             this.pnlTitle.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlTitle_MouseUp);
+            // 
+            // pbIcon
+            // 
+            this.pbIcon.Location = new System.Drawing.Point(3, 3);
+            this.pbIcon.Name = "pbIcon";
+            this.pbIcon.Size = new System.Drawing.Size(25, 25);
+            this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbIcon.TabIndex = 3;
+            this.pbIcon.TabStop = false;
             // 
             // btnMin
             // 
@@ -92,7 +104,7 @@
             this.lblProg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblProg.Font = new System.Drawing.Font("Lucida Console", 12F);
             this.lblProg.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblProg.Location = new System.Drawing.Point(12, 7);
+            this.lblProg.Location = new System.Drawing.Point(34, 7);
             this.lblProg.Name = "lblProg";
             this.lblProg.Size = new System.Drawing.Size(118, 16);
             this.lblProg.TabIndex = 0;
@@ -136,6 +148,7 @@
             this.Load += new System.EventHandler(this.base_Load);
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,5 +160,7 @@
         private System.Windows.Forms.Timer tmClose;
         private System.Windows.Forms.Timer tmOpen;
         #endregion
+
+        public System.Windows.Forms.PictureBox pbIcon;
     }
 }

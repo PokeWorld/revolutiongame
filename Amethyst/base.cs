@@ -9,6 +9,8 @@ namespace Amethyst
         bool drag;
         int mousex;
         int mousey;
+        public string rpcData;
+        public string rpcImage;
         public @base()
         {
             InitializeComponent();
@@ -75,7 +77,7 @@ namespace Amethyst
         #region inactive titlebars
         private void base_Activated(object sender, EventArgs e)
         {
-            RPCManger.UpdateSatus(lblProg.Text, Tag.ToString());
+            RPCManger.UpdateSatus(lblProg.Text, rpcData, rpcImage);
             if (Properties.Settings.Default.graphicsFriendly == true) return;
             pnlTitle.BackColor = Color.White;
             lblProg.ForeColor = SystemColors.ControlText;

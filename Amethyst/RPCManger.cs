@@ -26,7 +26,7 @@ namespace Amethyst
             presence.largeImageText = Application.ProductName;
             presence.largeImageKey = "logo";
             presence.smallImageKey = "logo";
-            presence.smallImageText = "logo";
+            presence.smallImageText = "Main Menu";
             presence.instance = false;
             DiscordRPC.UpdatePresence(ref presence);
             DiscordRPC.RunCallbacks();
@@ -47,14 +47,14 @@ namespace Amethyst
         }
 
 
-        public static void UpdateSatus(string newDetails, string newstate)
+        public static void UpdateSatus(string newDetails, string newstate, string rpcname)
         {
             presence.details = Utf8String(newDetails);
             presence.state = Utf8String(newstate);
-            presence.largeImageText = "logo";
+            presence.largeImageText = Application.ProductName;
             presence.largeImageKey = "logo";
-            presence.smallImageKey = "logo";
-            presence.smallImageText = "logo";
+            presence.smallImageKey = rpcname;
+            presence.smallImageText = newDetails;
             presence.instance = false;
             DiscordRPC.UpdatePresence(ref presence);
             DiscordRPC.RunCallbacks();

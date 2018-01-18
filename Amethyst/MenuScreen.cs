@@ -84,7 +84,7 @@ namespace Amethyst
 
         private void MenuScreen_Load(object sender, EventArgs e)
         {
-           RPCManger.start("Menu Screen", "Looking through the beautiful buttons");
+           RPCManger.start("Menu Screen", "Browsing the Menu Screen");
         }
     }
 }
