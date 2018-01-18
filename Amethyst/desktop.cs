@@ -20,6 +20,7 @@ namespace Amethyst
 
         private void desktop_Load(object sender, EventArgs e)
         {
+            RPCManger.UpdateSatus("Desktop", "Managing the desktop");
             lblDayCount.Text = "Day " + Properties.Settings.Default.DayCount.ToString();
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount.ToString();
         }
@@ -51,22 +52,27 @@ namespace Amethyst
 
         private void tsmDodgeTheAd_Click(object sender, EventArgs e)
         {
-            wm.createWindow(new DodgeTheAd(), "Dodge The Ad");
+            wm.createWindow(new DodgeTheAd(), "Dodge The Ad", "Dodging sketchy ads");
         }
 
         private void tsmSiteController_Click(object sender, EventArgs e)
         {
-            wm.createWindow(new SiteControl(), "Site Control");
+            wm.createWindow(new SiteControl(), "Site Control", "Controlling the site");
         }
 
         private void tsmSiteAnaylytics_Click(object sender, EventArgs e)
         {
-            wm.createWindow(new SiteAnalytics(), "Site Analytics");
+            wm.createWindow(new SiteAnalytics(), "Site Analytics", "Checking Stats");
         }
       
         private void tsmShutdown_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void desktop_Activated(object sender, EventArgs e)
+        {
+            RPCManger.UpdateSatus("Desktop", "Managing the desktop");
         }
     }
 }

@@ -112,6 +112,7 @@
             this.Name = "MenuScreen";
             this.Text = "Project Amethyst";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MenuScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

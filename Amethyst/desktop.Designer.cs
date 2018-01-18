@@ -164,6 +164,7 @@
             this.Name = "desktop";
             this.Text = "desktop";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Activated += new System.EventHandler(this.desktop_Activated);
             this.Load += new System.EventHandler(this.desktop_Load);
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();

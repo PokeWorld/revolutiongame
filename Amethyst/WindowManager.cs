@@ -5,7 +5,7 @@ namespace Amethyst
 {
     class WindowManager
     {
-        public void createWindow(UserControl program, String name)
+        public void createWindow(UserControl program, String name, String rpcData)
         {
             @base window = new @base()
             {
@@ -18,6 +18,7 @@ namespace Amethyst
             window.lblProg.Text = name;
             if  (Properties.Settings.Default.graphicsFriendly == false)  window.Opacity = 0;
             window.TopMost = true;
+            window.Tag = rpcData;
             window.Show();
         }
     }
