@@ -87,6 +87,12 @@
     <Compile Include="DodgeTheAd.Designer.cs">
       <DependentUpon>DodgeTheAd.cs</DependentUpon>
     </Compile>
+    <Compile Include="InProgressPlaceholder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InProgressPlaceholder.Designer.cs">
+      <DependentUpon>InProgressPlaceholder.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="SiteControl.Designer.cs">
       <DependentUpon>SiteControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UpgradeShop.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UpgradeShop.Designer.cs">
+      <DependentUpon>UpgradeShop.cs</DependentUpon>
+    </Compile>
     <Compile Include="WindowManager.cs" />
     <EmbeddedResource Include="base.resx">
       <DependentUpon>base.cs</DependentUpon>
@@ -122,6 +134,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DodgeTheAd.resx">
       <DependentUpon>DodgeTheAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InProgressPlaceholder.resx">
+      <DependentUpon>InProgressPlaceholder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuScreen.resx">
       <DependentUpon>MenuScreen.cs</DependentUpon>
@@ -143,6 +158,9 @@
     <EmbeddedResource Include="SiteControl.resx">
       <DependentUpon>SiteControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UpgradeShop.resx">
+      <DependentUpon>UpgradeShop.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -163,5 +181,6 @@
   <ItemGroup>
     <None Include="Resources\DodgeTheAd.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

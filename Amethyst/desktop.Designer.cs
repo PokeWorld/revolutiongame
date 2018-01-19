@@ -41,6 +41,8 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.lblMoney = new System.Windows.Forms.Label();
             this.tmData = new System.Windows.Forms.Timer(this.components);
+            this.upgradeShopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.leaderboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +63,8 @@
             this.tsmSiteAnaylytics,
             this.tsmSiteController,
             this.tsmDodgeTheAd,
+            this.upgradeShopToolStripMenuItem,
+            this.leaderboardToolStripMenuItem,
             this.ToolStripSeparator1,
             this.tsmShutdown});
             this.MenuToolStripMenuItem.Font = new System.Drawing.Font("Lucida Console", 9F);
@@ -148,6 +152,20 @@
             this.tmData.Enabled = true;
             this.tmData.Tick += new System.EventHandler(this.tmData_Tick);
             // 
+            // upgradeShopToolStripMenuItem
+            // 
+            this.upgradeShopToolStripMenuItem.Name = "upgradeShopToolStripMenuItem";
+            this.upgradeShopToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.upgradeShopToolStripMenuItem.Text = "Upgrade Shop";
+            this.upgradeShopToolStripMenuItem.Click += new System.EventHandler(this.upgradeShopToolStripMenuItem_Click);
+            // 
+            // leaderboardToolStripMenuItem
+            // 
+            this.leaderboardToolStripMenuItem.Name = "leaderboardToolStripMenuItem";
+            this.leaderboardToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.leaderboardToolStripMenuItem.Text = "Leaderboard";
+            this.leaderboardToolStripMenuItem.Click += new System.EventHandler(this.leaderboardToolStripMenuItem_Click);
+            // 
             // desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -185,5 +203,8 @@
         public System.Windows.Forms.Label lblMoney;
         public System.Windows.Forms.Timer tmData;
         #endregion
+
+        private System.Windows.Forms.ToolStripMenuItem upgradeShopToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem leaderboardToolStripMenuItem;
     }
 }

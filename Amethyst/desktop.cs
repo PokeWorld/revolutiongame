@@ -23,6 +23,7 @@ namespace Amethyst
             RPCManger.UpdateSatus("Desktop", "Managing the desktop", "icon");
             lblDayCount.Text = "Day " + Properties.Settings.Default.DayCount.ToString();
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount.ToString();
+            
         }
 
         private void btnDayAdvance_Click(object sender, EventArgs e)
@@ -42,12 +43,22 @@ namespace Amethyst
             Properties.Settings.Default.AdIntensity = 1;
             Properties.Settings.Default.Users = 10;
             Properties.Settings.Default.CashCount = 100;
+            Properties.Settings.Default.adsense1Puchased = false;
+            Properties.Settings.Default.leaderboardsPurchased = false;
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
         }
 
         private void tmData_Tick(object sender, EventArgs e)
         {
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
+            if (Properties.Settings.Default.leaderboardsPurchased == false)
+            {
+                leaderboardToolStripMenuItem.Visible = false;
+            }
+            if (Properties.Settings.Default.leaderboardsPurchased == true)
+            {
+                leaderboardToolStripMenuItem.Visible = true;
+            }
         }
 
         private void tsmDodgeTheAd_Click(object sender, EventArgs e)
@@ -73,6 +84,16 @@ namespace Amethyst
         private void desktop_Activated(object sender, EventArgs e)
         {
             RPCManger.UpdateSatus("Desktop", "Managing the desktop", "logo");
+        }
+
+        private void upgradeShopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new UpgradeShop(), "Upgrade Shop", "Upgrading " + Properties.Settings.Default.SiteName, "controlpanel", Properties.Resources.ControlPanel);
+        }
+
+        private void leaderboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new InProgressPlaceholder(), "Critical", "Viewing the error", "AnalyticsNew", Properties.Resources.AnalyticsNew);
         }
     }
 }

@@ -35,6 +35,7 @@
             this.lblUserCount = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
+            this.lblAdsense = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblSiteName
@@ -93,10 +94,21 @@
             this.lblDesc.TabIndex = 4;
             this.lblDesc.Text = "Here, you will find the \"numbers\" of your network.";
             // 
+            // lblAdsense
+            // 
+            this.lblAdsense.AutoSize = true;
+            this.lblAdsense.Font = new System.Drawing.Font("Lucida Console", 10F);
+            this.lblAdsense.Location = new System.Drawing.Point(14, 123);
+            this.lblAdsense.Name = "lblAdsense";
+            this.lblAdsense.Size = new System.Drawing.Size(127, 14);
+            this.lblAdsense.TabIndex = 5;
+            this.lblAdsense.Text = "AdSense? : null";
+            // 
             // SiteAnalytics
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblAdsense);
             this.Controls.Add(this.lblDesc);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblUserCount);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Label lblUserCount;
         private System.Windows.Forms.Label  lblTitle;
         private System.Windows.Forms.Label  lblDesc;
+        private System.Windows.Forms.Label lblAdsense;
     }
 }

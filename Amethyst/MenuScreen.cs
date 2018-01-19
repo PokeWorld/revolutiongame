@@ -37,7 +37,7 @@ namespace Amethyst
                     setColor(System.Drawing.Color.OrangeRed);
                     break;
                 case 8:
-                    lblAdvice.Text = "Now in C#, and still VERY CLOSED SOURCE.";
+                    lblAdvice.Text = "Now in C#, and FINALLY open source!";
                     setColor(System.Drawing.Color.Crimson);
                     break;
                 case 7:
@@ -53,11 +53,11 @@ namespace Amethyst
                     setColor(System.Drawing.Color.Black);
                     break;
                 case 4:
-                    lblAdvice.Text = "Rich Presence is in if you have discord";
+                    lblAdvice.Text = "We have Rich Presence! Now go off to show your buddies!";
                     setColor(System.Drawing.Color.CadetBlue);
                     break;
                 case 3:
-                    lblAdvice.Text = "bytes and bits";
+                    lblAdvice.Text = "Feeling bored of ShiftOS 0.0.3 gameplay? Visit the Upgrade Shop!\r\nNow with the clunkiest code you will ever see, \r\nyou can purchase upgrades!";
                     setColor(System.Drawing.Color.DeepPink);
                     break;
                 case 2:
