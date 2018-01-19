@@ -85,6 +85,14 @@ namespace Amethyst
         private void MenuScreen_Load(object sender, EventArgs e)
         {
            RPCManger.start("Menu Screen", "Browsing the Menu Screen");
+            if(Properties.Settings.Default.upgradesAvailable == null)
+            {
+                Properties.Settings.Default.upgradesAvailable = new System.Collections.Hashtable();
+                Properties.Settings.Default.upgradesBought = new System.Collections.Hashtable();
+                Properties.Settings.Default.upgradesAvailable.Add("Enable AdSense", null);
+                Properties.Settings.Default.upgradesAvailable.Add("Unlock Leaderboards", null);
+            }
+            UpgradeMeta.load();
         }
     }
 }

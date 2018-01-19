@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblCost = new System.Windows.Forms.Label();
+            this.lblUpgradeDesc = new System.Windows.Forms.Label();
+            this.lblUpgradeTitle = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listUpgrades = new System.Windows.Forms.ListBox();
             this.lblTotalCash = new System.Windows.Forms.Label();
             this.tmrUpdateTotal = new System.Windows.Forms.Timer(this.components);
-            this.button1 = new System.Windows.Forms.Button();
-            this.lblUpgradeTitle = new System.Windows.Forms.Label();
-            this.lblUpgradeDesc = new System.Windows.Forms.Label();
-            this.lblCost = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(472, 600);
             this.panel1.TabIndex = 0;
+            // 
+            // lblCost
+            // 
+            this.lblCost.AutoSize = true;
+            this.lblCost.Font = new System.Drawing.Font("Lucida Console", 18F);
+            this.lblCost.Location = new System.Drawing.Point(6, 566);
+            this.lblCost.Name = "lblCost";
+            this.lblCost.Size = new System.Drawing.Size(0, 24);
+            this.lblCost.TabIndex = 3;
+            // 
+            // lblUpgradeDesc
+            // 
+            this.lblUpgradeDesc.AutoSize = true;
+            this.lblUpgradeDesc.Font = new System.Drawing.Font("Lucida Console", 13F);
+            this.lblUpgradeDesc.Location = new System.Drawing.Point(7, 66);
+            this.lblUpgradeDesc.Name = "lblUpgradeDesc";
+            this.lblUpgradeDesc.Size = new System.Drawing.Size(426, 126);
+            this.lblUpgradeDesc.TabIndex = 2;
+            this.lblUpgradeDesc.Text = "Here, you can purchase items that will\r\nimprove the quality of your site, or \r\npo" +
+    "ssibly attract more users to your\r\nplatform. To get an upgrade, click\r\non an ite" +
+    "m to the left to get started\r\n\r\n\r\n";
+            // 
+            // lblUpgradeTitle
+            // 
+            this.lblUpgradeTitle.AutoSize = true;
+            this.lblUpgradeTitle.Font = new System.Drawing.Font("Lucida Console", 18F);
+            this.lblUpgradeTitle.Location = new System.Drawing.Point(3, 16);
+            this.lblUpgradeTitle.Name = "lblUpgradeTitle";
+            this.lblUpgradeTitle.Size = new System.Drawing.Size(290, 24);
+            this.lblUpgradeTitle.TabIndex = 1;
+            this.lblUpgradeTitle.Text = "Welcome to Upgrades!";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Lucida Console", 14F);
+            this.button1.Location = new System.Drawing.Point(337, 561);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 36);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Purchase";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -67,10 +109,6 @@
             this.listUpgrades.Font = new System.Drawing.Font("Lucida Console", 13F);
             this.listUpgrades.FormattingEnabled = true;
             this.listUpgrades.ItemHeight = 17;
-            this.listUpgrades.Items.AddRange(new object[] {
-            "Enable AdSense",
-            "Unlock Leaderboards",
-            "TestUpgrade3"});
             this.listUpgrades.Location = new System.Drawing.Point(19, 66);
             this.listUpgrades.Name = "listUpgrades";
             this.listUpgrades.Size = new System.Drawing.Size(367, 446);
@@ -93,48 +131,6 @@
             this.tmrUpdateTotal.Interval = 10;
             this.tmrUpdateTotal.Tick += new System.EventHandler(this.tmrUpdateTotal_Tick);
             // 
-            // button1
-            // 
-            this.button1.Font = new System.Drawing.Font("Lucida Console", 14F);
-            this.button1.Location = new System.Drawing.Point(337, 561);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Purchase";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // lblUpgradeTitle
-            // 
-            this.lblUpgradeTitle.AutoSize = true;
-            this.lblUpgradeTitle.Font = new System.Drawing.Font("Lucida Console", 18F);
-            this.lblUpgradeTitle.Location = new System.Drawing.Point(3, 16);
-            this.lblUpgradeTitle.Name = "lblUpgradeTitle";
-            this.lblUpgradeTitle.Size = new System.Drawing.Size(290, 24);
-            this.lblUpgradeTitle.TabIndex = 1;
-            this.lblUpgradeTitle.Text = "Welcome to Upgrades!";
-            // 
-            // lblUpgradeDesc
-            // 
-            this.lblUpgradeDesc.AutoSize = true;
-            this.lblUpgradeDesc.Font = new System.Drawing.Font("Lucida Console", 13F);
-            this.lblUpgradeDesc.Location = new System.Drawing.Point(7, 66);
-            this.lblUpgradeDesc.Name = "lblUpgradeDesc";
-            this.lblUpgradeDesc.Size = new System.Drawing.Size(426, 126);
-            this.lblUpgradeDesc.TabIndex = 2;
-            this.lblUpgradeDesc.Text = "Here, you can purchase items that will\r\nimprove the quality of your site, or \r\npo" +
-    "ssibly attract more users to your\r\nplatform. To get an upgrade, click\r\non an ite" +
-    "m to the left to get started\r\n\r\n\r\n";
-            // 
-            // lblCost
-            // 
-            this.lblCost.AutoSize = true;
-            this.lblCost.Font = new System.Drawing.Font("Lucida Console", 18F);
-            this.lblCost.Location = new System.Drawing.Point(6, 566);
-            this.lblCost.Name = "lblCost";
-            this.lblCost.Size = new System.Drawing.Size(0, 24);
-            this.lblCost.TabIndex = 3;
-            // 
             // UpgradeShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,6 +141,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "UpgradeShop";
             this.Size = new System.Drawing.Size(864, 600);
+            this.Load += new System.EventHandler(this.UpgradeShop_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

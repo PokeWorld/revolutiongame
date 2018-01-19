@@ -22,7 +22,7 @@ namespace Amethyst
             lblSiteName.Text = "Network Name: " + Properties.Settings.Default.SiteName;
             lblAdIntensity.Text = "Advertising Intensity: " + Properties.Settings.Default.AdIntensity.ToString();
             lblUserCount.Text = "Users: " + Properties.Settings.Default.Users.ToString();
-            lblAdsense.Text = "AdSense? : " + Properties.Settings.Default.adsense1Puchased.ToString();
+            lblAdsense.Text = "AdSense? : " + UpgradeMeta.checkUpgradeBought("Enable AdSense");
         }
     }
 }

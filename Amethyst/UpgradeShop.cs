@@ -25,52 +25,33 @@ namespace Amethyst
 
         private void listUpgrades_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedItem = listUpgrades.SelectedIndex;
-
-            if (listUpgrades.SelectedItem != null && listUpgrades.SelectedItem.ToString() == "Enable AdSense")
-            {
-                lblUpgradeTitle.Text = "Enable AdSense";
-                lblUpgradeDesc.Text = "This allows you to put ads on your network\r\nto make money from it.";
-                lblCost.Text = "Cost: $50";
-            }
-
-            if (listUpgrades.SelectedItem != null && listUpgrades.SelectedItem.ToString() == "Unlock Leaderboards")
-            {
-                lblUpgradeTitle.Text = "Unlock Leaderboards";
-                lblUpgradeDesc.Text = "Now, you can see your standing versus \r\nother networks in this handy application!";
-                lblCost.Text = "Cost: $95";
-            }
-
-            if (listUpgrades.SelectedItem != null && listUpgrades.SelectedItem.ToString() == "TestUpgrade3")
-            {
-                lblUpgradeTitle.Text = "TestUpgrade3";
-                lblUpgradeDesc.Text = "You must be getting sick and tired\r\nof these strings by now.";
-            }
+            if (listUpgrades.SelectedItem == null) return;
+            lblUpgradeTitle.Text = listUpgrades.SelectedItem.ToString();
+            lblUpgradeDesc.Text = UpgradeMeta.getUpgradeDescription(listUpgrades.SelectedItem.ToString());
+            lblCost.Text = UpgradeMeta.getUpgradePrice(listUpgrades.SelectedItem.ToString()).ToString();
+            if (Properties.Settings.Default.CashCount < UpgradeMeta.getUpgradePrice(listUpgrades.SelectedItem.ToString()))
+                button1.Enabled = false;
+            else
+                button1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (listUpgrades.SelectedItem != null && listUpgrades.SelectedItem.ToString() == "Enable AdSense")
+            if (listUpgrades.SelectedItem == null) return;
+            UpgradeMeta.buyUpgrade(listUpgrades.SelectedItem.ToString());
+            listUpgrades.Items.Clear();
+            foreach (string i in UpgradeMeta.listUpgradesAvaiable())
             {
-                if (Properties.Settings.Default.adsense1Puchased == false)
-                {
-                    if (Properties.Settings.Default.CashCount < 50) return;
-                    Properties.Settings.Default.adsense1Puchased = true;
-                    Properties.Settings.Default.CashCount -= 50;    
-                }
-                
+                listUpgrades.Items.Add(i);
             }
-            if (listUpgrades.SelectedItem != null && listUpgrades.SelectedItem.ToString() == "Unlock Leaderboards")
+        }
+
+        private void UpgradeShop_Load(object sender, EventArgs e)
+        {
+            foreach (string i in UpgradeMeta.listUpgradesAvaiable())
             {
-                if (Properties.Settings.Default.leaderboardsPurchased == false)
-                {
-                    if (Properties.Settings.Default.CashCount < 95) return;
-                    Properties.Settings.Default.leaderboardsPurchased = true;
-                    Properties.Settings.Default.CashCount -= 95;
-                }
-
+                listUpgrades.Items.Add(i);
             }
-
         }
     }
 }

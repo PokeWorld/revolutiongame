@@ -119,6 +119,7 @@
     <Compile Include="SiteControl.Designer.cs">
       <DependentUpon>SiteControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="upgradeMeta.cs" />
     <Compile Include="UpgradeShop.cs">
       <SubType>UserControl</SubType>
     </Compile>

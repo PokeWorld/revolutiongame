@@ -43,22 +43,12 @@ namespace Amethyst
             Properties.Settings.Default.AdIntensity = 1;
             Properties.Settings.Default.Users = 10;
             Properties.Settings.Default.CashCount = 100;
-            Properties.Settings.Default.adsense1Puchased = false;
-            Properties.Settings.Default.leaderboardsPurchased = false;
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
         }
 
         private void tmData_Tick(object sender, EventArgs e)
         {
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
-            if (Properties.Settings.Default.leaderboardsPurchased == false)
-            {
-                leaderboardToolStripMenuItem.Visible = false;
-            }
-            if (Properties.Settings.Default.leaderboardsPurchased == true)
-            {
-                leaderboardToolStripMenuItem.Visible = true;
-            }
         }
 
         private void tsmDodgeTheAd_Click(object sender, EventArgs e)

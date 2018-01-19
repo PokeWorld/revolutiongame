@@ -20,11 +20,11 @@
     <Setting Name="graphicsFriendly" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="adsense1Puchased" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="upgradesAvailable" Type="System.Collections.Hashtable" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="leaderboardsPurchased" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="upgradesBought" Type="System.Collections.Hashtable" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

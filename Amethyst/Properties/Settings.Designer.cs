@@ -12,7 +12,7 @@ namespace Amethyst.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.1.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -97,25 +97,23 @@ namespace Amethyst.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool adsense1Puchased {
+        public global::System.Collections.Hashtable upgradesAvailable {
             get {
-                return ((bool)(this["adsense1Puchased"]));
+                return ((global::System.Collections.Hashtable)(this["upgradesAvailable"]));
             }
             set {
-                this["adsense1Puchased"] = value;
+                this["upgradesAvailable"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool leaderboardsPurchased {
+        public global::System.Collections.Hashtable upgradesBought {
             get {
-                return ((bool)(this["leaderboardsPurchased"]));
+                return ((global::System.Collections.Hashtable)(this["upgradesBought"]));
             }
             set {
-                this["leaderboardsPurchased"] = value;
+                this["upgradesBought"] = value;
             }
         }
     }
