@@ -7,7 +7,6 @@ namespace Amethyst
 {
     class WindowManager
     {
-                    public List<String> rpc = new List<String>();
         public void createWindow(UserControl program, String name, String rpcData, String rpcImage, Image icon)
         {
             @base window = new @base()
