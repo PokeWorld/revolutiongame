@@ -5,7 +5,7 @@ namespace Amethyst
 {
     public partial class MenuScreen : Form
     {
-        
+
         public MenuScreen()
         {
             InitializeComponent();
@@ -84,8 +84,8 @@ namespace Amethyst
 
         private void MenuScreen_Load(object sender, EventArgs e)
         {
-           RPCManger.start("Menu Screen", "Browsing the Menu Screen");
-            if(Properties.Settings.Default.upgradesAvailable == null)
+            RPCManger.start("Menu Screen", "Browsing the Menu Screen");
+            if (Properties.Settings.Default.upgradesAvailable == null)
             {
                 Properties.Settings.Default.upgradesAvailable = new System.Collections.Hashtable();
                 Properties.Settings.Default.upgradesBought = new System.Collections.Hashtable();
@@ -93,6 +93,11 @@ namespace Amethyst
                 Properties.Settings.Default.upgradesAvailable.Add("Unlock Leaderboards", null);
             }
             UpgradeMeta.load();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

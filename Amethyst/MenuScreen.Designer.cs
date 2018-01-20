@@ -29,63 +29,15 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblAmethyst = new System.Windows.Forms.Label();
-            this.lblAdvice = new System.Windows.Forms.Label();
-            this.btnPlay = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.tmText = new System.Windows.Forms.Timer(this.components);
             this.tmGraphic = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblAdvice = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.lblAmethyst = new System.Windows.Forms.Label();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lblAmethyst
-            // 
-            this.lblAmethyst.AutoSize = true;
-            this.lblAmethyst.Font = new System.Drawing.Font("Lucida Console", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmethyst.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAmethyst.Location = new System.Drawing.Point(19, 19);
-            this.lblAmethyst.Name = "lblAmethyst";
-            this.lblAmethyst.Size = new System.Drawing.Size(252, 48);
-            this.lblAmethyst.TabIndex = 0;
-            this.lblAmethyst.Text = "Amethyst";
-            // 
-            // lblAdvice
-            // 
-            this.lblAdvice.AutoSize = true;
-            this.lblAdvice.Font = new System.Drawing.Font("Lucida Console", 18F);
-            this.lblAdvice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAdvice.Location = new System.Drawing.Point(22, 208);
-            this.lblAdvice.Name = "lblAdvice";
-            this.lblAdvice.Size = new System.Drawing.Size(402, 24);
-            this.lblAdvice.TabIndex = 2;
-            this.lblAdvice.Text = "More gameplay than ForumLife";
-            // 
-            // btnPlay
-            // 
-            this.btnPlay.BackColor = System.Drawing.Color.Purple;
-            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPlay.Font = new System.Drawing.Font("Lucida Console", 14F);
-            this.btnPlay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnPlay.Location = new System.Drawing.Point(27, 103);
-            this.btnPlay.Name = "btnPlay";
-            this.btnPlay.Size = new System.Drawing.Size(244, 40);
-            this.btnPlay.TabIndex = 3;
-            this.btnPlay.Text = "Play";
-            this.btnPlay.UseVisualStyleBackColor = false;
-            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Purple;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Lucida Console", 14F);
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnExit.Location = new System.Drawing.Point(27, 149);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(244, 40);
-            this.btnExit.TabIndex = 4;
-            this.btnExit.Text = "Close Game";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // tmText
             // 
@@ -98,34 +50,91 @@
             this.tmGraphic.Interval = 1;
             this.tmGraphic.Tick += new System.EventHandler(this.tmGraphic_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.lblAdvice);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Controls.Add(this.btnPlay);
+            this.panel1.Controls.Add(this.lblAmethyst);
+            this.panel1.Location = new System.Drawing.Point(-3, -1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(335, 602);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // lblAdvice
+            // 
+            this.lblAdvice.AutoSize = true;
+            this.lblAdvice.Font = new System.Drawing.Font("Lucida Console", 11F);
+            this.lblAdvice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblAdvice.Location = new System.Drawing.Point(15, 574);
+            this.lblAdvice.Name = "lblAdvice";
+            this.lblAdvice.Size = new System.Drawing.Size(259, 15);
+            this.lblAdvice.TabIndex = 3;
+            this.lblAdvice.Text = "More gameplay than ForumLife";
+            // 
+            // btnExit
+            // 
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Lucida Console", 12F);
+            this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnExit.Location = new System.Drawing.Point(73, 112);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(189, 29);
+            this.btnExit.TabIndex = 2;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlay.Font = new System.Drawing.Font("Lucida Console", 12F);
+            this.btnPlay.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnPlay.Location = new System.Drawing.Point(73, 77);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(189, 29);
+            this.btnPlay.TabIndex = 1;
+            this.btnPlay.Text = "Play";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            // 
+            // lblAmethyst
+            // 
+            this.lblAmethyst.AutoSize = true;
+            this.lblAmethyst.Font = new System.Drawing.Font("Lucida Console", 40F);
+            this.lblAmethyst.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAmethyst.Location = new System.Drawing.Point(28, 20);
+            this.lblAmethyst.Name = "lblAmethyst";
+            this.lblAmethyst.Size = new System.Drawing.Size(287, 54);
+            this.lblAmethyst.TabIndex = 0;
+            this.lblAmethyst.Text = "Amethyst";
+            // 
             // MenuScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkMagenta;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.lblAmethyst);
-            this.Controls.Add(this.lblAdvice);
-            this.Controls.Add(this.btnPlay);
-            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuScreen";
             this.Text = "Project Amethyst";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MenuScreen_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblAmethyst;
-        private System.Windows.Forms.Label lblAdvice;
-        private System.Windows.Forms.Button btnPlay;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Timer tmText;
         private System.Windows.Forms.Timer tmGraphic;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblAdvice;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Label lblAmethyst;
     }
 }
 
