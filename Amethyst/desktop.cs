@@ -23,7 +23,7 @@ namespace Amethyst
             RPCManger.UpdateSatus("Desktop", "Managing the desktop", "icon");
             lblDayCount.Text = "Day " + Properties.Settings.Default.DayCount.ToString();
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount.ToString();
-            
+            if (!UpgradeMeta.checkUpgradeBought("Unlock Leaderboards")) tsmLeaderboard.Visible = false;
         }
 
         private void btnDayAdvance_Click(object sender, EventArgs e)

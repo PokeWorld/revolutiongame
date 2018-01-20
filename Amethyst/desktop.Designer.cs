@@ -34,6 +34,8 @@
             this.tsmSiteAnaylytics = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmSiteController = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmDodgeTheAd = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmUpgradeShop = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmLeaderboard = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.tsmShutdown = new System.Windows.Forms.ToolStripMenuItem();
             this.btnDayAdvance = new System.Windows.Forms.Button();
@@ -41,8 +43,6 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.lblMoney = new System.Windows.Forms.Label();
             this.tmData = new System.Windows.Forms.Timer(this.components);
-            this.upgradeShopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.leaderboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,8 +63,8 @@
             this.tsmSiteAnaylytics,
             this.tsmSiteController,
             this.tsmDodgeTheAd,
-            this.upgradeShopToolStripMenuItem,
-            this.leaderboardToolStripMenuItem,
+            this.tsmUpgradeShop,
+            this.tsmLeaderboard,
             this.ToolStripSeparator1,
             this.tsmShutdown});
             this.MenuToolStripMenuItem.Font = new System.Drawing.Font("Lucida Console", 9F);
@@ -92,6 +92,20 @@
             this.tsmDodgeTheAd.Size = new System.Drawing.Size(161, 22);
             this.tsmDodgeTheAd.Text = "Dodge The Ad";
             this.tsmDodgeTheAd.Click += new System.EventHandler(this.tsmDodgeTheAd_Click);
+            // 
+            // tsmUpgradeShop
+            // 
+            this.tsmUpgradeShop.Name = "tsmUpgradeShop";
+            this.tsmUpgradeShop.Size = new System.Drawing.Size(161, 22);
+            this.tsmUpgradeShop.Text = "Upgrade Shop";
+            this.tsmUpgradeShop.Click += new System.EventHandler(this.upgradeShopToolStripMenuItem_Click);
+            // 
+            // tsmLeaderboard
+            // 
+            this.tsmLeaderboard.Name = "tsmLeaderboard";
+            this.tsmLeaderboard.Size = new System.Drawing.Size(161, 22);
+            this.tsmLeaderboard.Text = "Leaderboard";
+            this.tsmLeaderboard.Click += new System.EventHandler(this.leaderboardToolStripMenuItem_Click);
             // 
             // ToolStripSeparator1
             // 
@@ -152,20 +166,6 @@
             this.tmData.Enabled = true;
             this.tmData.Tick += new System.EventHandler(this.tmData_Tick);
             // 
-            // upgradeShopToolStripMenuItem
-            // 
-            this.upgradeShopToolStripMenuItem.Name = "upgradeShopToolStripMenuItem";
-            this.upgradeShopToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.upgradeShopToolStripMenuItem.Text = "Upgrade Shop";
-            this.upgradeShopToolStripMenuItem.Click += new System.EventHandler(this.upgradeShopToolStripMenuItem_Click);
-            // 
-            // leaderboardToolStripMenuItem
-            // 
-            this.leaderboardToolStripMenuItem.Name = "leaderboardToolStripMenuItem";
-            this.leaderboardToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.leaderboardToolStripMenuItem.Text = "Leaderboard";
-            this.leaderboardToolStripMenuItem.Click += new System.EventHandler(this.leaderboardToolStripMenuItem_Click);
-            // 
             // desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,7 +204,7 @@
         public System.Windows.Forms.Timer tmData;
         #endregion
 
-        private System.Windows.Forms.ToolStripMenuItem upgradeShopToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem leaderboardToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tsmUpgradeShop;
+        private System.Windows.Forms.ToolStripMenuItem tsmLeaderboard;
     }
 }

@@ -48,11 +48,9 @@ namespace Amethyst
 
         public static bool checkUpgradeBought(string upgradeName)
         {
-            if (Properties.Settings.Default.upgradesBought.Contains(upgradeName))
-                return true;
-            else
-                return false;
+            return (Properties.Settings.Default.upgradesBought.Contains(upgradeName) ? true : false);
         }
+
         public static void buyUpgrade(string upgradeName)
         {
             Properties.Settings.Default.upgradesBought.Add(
