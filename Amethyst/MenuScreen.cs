@@ -29,11 +29,11 @@ namespace Amethyst
             switch (new Random().Next(1, 10))
             {
                 case 10:
-                    lblAdvice.Text = "I promise this will be finished by mid 2019";
+                    lblAdvice.Text = "I promise this will be finished by \r\nmid 2019";
                     setColor(System.Drawing.Color.Aqua);
                     break;
                 case 9:
-                    lblAdvice.Text = "Puzzled? Go to the 'Site Controller' application to get started.";
+                    lblAdvice.Text = "Puzzled? Go to the 'Site Controller' \r\napplication to get started.";
                     setColor(System.Drawing.Color.OrangeRed);
                     break;
                 case 8:
@@ -45,19 +45,19 @@ namespace Amethyst
                     setColor(System.Drawing.Color.LimeGreen);
                     break;
                 case 6:
-                    lblAdvice.Text = "If Rylan was a developer, this would be Google Cod. :fish:";
+                    lblAdvice.Text = "If Rylan was a developer, this \r\nwould be Google Cod. :fish:";
                     setColor(System.Drawing.Color.Salmon);
                     break;
                 case 5:
-                    lblAdvice.Text = "Seriously, don't run this at ANYTHING higher than 1080p";
+                    lblAdvice.Text = "Seriously, don't run this at\r\nANYTHING higher than 1080p";
                     setColor(System.Drawing.Color.Black);
                     break;
                 case 4:
-                    lblAdvice.Text = "We have Rich Presence! Now go off to show your buddies!";
+                    lblAdvice.Text = "We have Rich Presence! Now \r\ngo off to show your buddies!";
                     setColor(System.Drawing.Color.CadetBlue);
                     break;
                 case 3:
-                    lblAdvice.Text = "Feeling bored of ShiftOS 0.0.3 gameplay? Visit the Upgrade Shop!\r\nNow with the clunkiest code you will ever see, \r\nyou can purchase upgrades!";
+                    lblAdvice.Text = "Feeling bored of ShiftOS 0.0.3\r\ngameplay? Visit the Upgrade Shop!\r\nNow with the clunkiest code you will ever see, \r\nyou can purchase upgrades!";
                     setColor(System.Drawing.Color.DeepPink);
                     break;
                 case 2:
@@ -74,8 +74,6 @@ namespace Amethyst
         public void setColor(System.Drawing.Color color)
         {
             BackColor = color;
-            btnPlay.BackColor = color;
-            btnExit.BackColor = color;
         }
         private void btnPlay_Click(object sender, EventArgs e)
         {
@@ -97,7 +95,17 @@ namespace Amethyst
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+            panel1.BackColor = System.Drawing.Color.FromArgb(25, 0, 0, 0);
+        }
 
+        private void btnPlay_Click_1(object sender, EventArgs e)
+        {
+            new desktop().Show();
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

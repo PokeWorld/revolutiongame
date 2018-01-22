@@ -22,13 +22,15 @@ namespace Amethyst
         
         public static int getUpgradePrice(string upgradeName)
         {
-            upgradePrices.TryGetValue(upgradeName, out int price);
+            int price;
+            upgradePrices.TryGetValue(upgradeName, out price);
             return price;
         }
         
         public static string getUpgradeDescription(string upgradeName)
         {
-            upgradeDescriptions.TryGetValue(upgradeName, out string description);
+            string description;
+            upgradeDescriptions.TryGetValue(upgradeName, out description);
             return description;
         }
 

@@ -57,20 +57,23 @@
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnPlay);
             this.panel1.Controls.Add(this.lblAmethyst);
-            this.panel1.Location = new System.Drawing.Point(-3, -1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(335, 602);
+            this.panel1.Size = new System.Drawing.Size(335, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // lblAdvice
             // 
             this.lblAdvice.AutoSize = true;
+            this.lblAdvice.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.lblAdvice.Font = new System.Drawing.Font("Lucida Console", 11F);
             this.lblAdvice.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblAdvice.Location = new System.Drawing.Point(15, 574);
+            this.lblAdvice.Location = new System.Drawing.Point(0, 580);
             this.lblAdvice.Name = "lblAdvice";
-            this.lblAdvice.Size = new System.Drawing.Size(259, 15);
+            this.lblAdvice.Padding = new System.Windows.Forms.Padding(5, 0, 0, 5);
+            this.lblAdvice.Size = new System.Drawing.Size(264, 20);
             this.lblAdvice.TabIndex = 3;
             this.lblAdvice.Text = "More gameplay than ForumLife";
             // 
@@ -85,6 +88,7 @@
             this.btnExit.TabIndex = 2;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
             // 
             // btnPlay
             // 
@@ -97,6 +101,7 @@
             this.btnPlay.TabIndex = 1;
             this.btnPlay.Text = "Play";
             this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click_1);
             // 
             // lblAmethyst
             // 

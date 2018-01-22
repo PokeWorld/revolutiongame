@@ -43,7 +43,10 @@
             this.btnRestart = new System.Windows.Forms.Button();
             this.lblMoney = new System.Windows.Forms.Label();
             this.tmData = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelBar.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelBar
@@ -121,20 +124,24 @@
             // 
             // btnDayAdvance
             // 
+            this.btnDayAdvance.BackColor = System.Drawing.Color.Black;
+            this.btnDayAdvance.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDayAdvance.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.btnDayAdvance.Location = new System.Drawing.Point(80, 8);
+            this.btnDayAdvance.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDayAdvance.Location = new System.Drawing.Point(0, 70);
             this.btnDayAdvance.Name = "btnDayAdvance";
             this.btnDayAdvance.Size = new System.Drawing.Size(100, 23);
             this.btnDayAdvance.TabIndex = 1;
             this.btnDayAdvance.Text = "Day Advance";
-            this.btnDayAdvance.UseVisualStyleBackColor = true;
+            this.btnDayAdvance.UseVisualStyleBackColor = false;
             this.btnDayAdvance.Click += new System.EventHandler(this.btnDayAdvance_Click);
             // 
             // lblDayCount
             // 
             this.lblDayCount.AutoSize = true;
             this.lblDayCount.Font = new System.Drawing.Font("Lucida Console", 8.25F);
-            this.lblDayCount.Location = new System.Drawing.Point(13, 13);
+            this.lblDayCount.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblDayCount.Location = new System.Drawing.Point(3, 45);
             this.lblDayCount.Name = "lblDayCount";
             this.lblDayCount.Size = new System.Drawing.Size(61, 11);
             this.lblDayCount.TabIndex = 2;
@@ -142,20 +149,24 @@
             // 
             // btnRestart
             // 
+            this.btnRestart.BackColor = System.Drawing.Color.Black;
+            this.btnRestart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRestart.Font = new System.Drawing.Font("Lucida Console", 9F);
-            this.btnRestart.Location = new System.Drawing.Point(186, 8);
+            this.btnRestart.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnRestart.Location = new System.Drawing.Point(107, 70);
             this.btnRestart.Name = "btnRestart";
             this.btnRestart.Size = new System.Drawing.Size(93, 23);
             this.btnRestart.TabIndex = 3;
             this.btnRestart.Text = "Reset Game";
-            this.btnRestart.UseVisualStyleBackColor = true;
+            this.btnRestart.UseVisualStyleBackColor = false;
             this.btnRestart.Click += new System.EventHandler(this.btnRestart_Click);
             // 
             // lblMoney
             // 
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Lucida Console", 8.25F);
-            this.lblMoney.Location = new System.Drawing.Point(13, 37);
+            this.lblMoney.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblMoney.Location = new System.Drawing.Point(118, 45);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(82, 11);
             this.lblMoney.TabIndex = 4;
@@ -166,16 +177,38 @@
             this.tmData.Enabled = true;
             this.tmData.Tick += new System.EventHandler(this.tmData_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblDayCount);
+            this.panel1.Controls.Add(this.btnRestart);
+            this.panel1.Controls.Add(this.lblMoney);
+            this.panel1.Controls.Add(this.btnDayAdvance);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(600, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 576);
+            this.panel1.TabIndex = 5;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Console", 20F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(73, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 27);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Sidebar";
+            // 
             // desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 600);
-            this.Controls.Add(this.lblMoney);
-            this.Controls.Add(this.btnRestart);
-            this.Controls.Add(this.lblDayCount);
-            this.Controls.Add(this.btnDayAdvance);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MainMenuStrip = this.panelBar;
@@ -186,6 +219,8 @@
             this.Load += new System.EventHandler(this.desktop_Load);
             this.panelBar.ResumeLayout(false);
             this.panelBar.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +241,7 @@
 
         private System.Windows.Forms.ToolStripMenuItem tsmUpgradeShop;
         private System.Windows.Forms.ToolStripMenuItem tsmLeaderboard;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -85,5 +85,10 @@ namespace Amethyst
         {
             wm.createWindow(new InProgressPlaceholder(), "Critical", "Viewing the error", "AnalyticsNew", Properties.Resources.AnalyticsNew);
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            panel1.BackColor = System.Drawing.Color.FromArgb(15, 155, 155, 155);
+        }
     }
 }
