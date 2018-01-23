@@ -32,6 +32,9 @@ namespace Amethyst
             lblDayCount.Text = "Day " + Properties.Settings.Default.DayCount.ToString();
             Properties.Settings.Default.Users += Properties.Settings.Default.AdIntensity * 2;
             Properties.Settings.Default.CashCount -= Properties.Settings.Default.AdIntensity;
+            if(UpgradeMeta.checkUpgradeBought("Enable AdSense")) {
+                Properties.Settings.Default.CashCount += Properties.Settings.Default.Users / 2;
+            }
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
         }
 

@@ -141,7 +141,7 @@
             this.lblDayCount.AutoSize = true;
             this.lblDayCount.Font = new System.Drawing.Font("Lucida Console", 8.25F);
             this.lblDayCount.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblDayCount.Location = new System.Drawing.Point(3, 45);
+            this.lblDayCount.Location = new System.Drawing.Point(139, 56);
             this.lblDayCount.Name = "lblDayCount";
             this.lblDayCount.Size = new System.Drawing.Size(61, 11);
             this.lblDayCount.TabIndex = 2;
@@ -166,7 +166,7 @@
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Lucida Console", 8.25F);
             this.lblMoney.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblMoney.Location = new System.Drawing.Point(118, 45);
+            this.lblMoney.Location = new System.Drawing.Point(3, 56);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(82, 11);
             this.lblMoney.TabIndex = 4;
