@@ -52,6 +52,8 @@ namespace Amethyst
         private void tmData_Tick(object sender, EventArgs e)
         {
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount;
+            lblAnalyticsUsers.Text = "Users: " + Properties.Settings.Default.Users;
+            lblAnalyticsAdsense.Text = "Adsense? : " + (UpgradeMeta.checkUpgradeBought("Enable AdSense") ? "Yes" : "No");
         }
 
         private void tsmDodgeTheAd_Click(object sender, EventArgs e)

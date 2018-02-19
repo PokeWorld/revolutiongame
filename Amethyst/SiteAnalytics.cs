@@ -20,7 +20,7 @@ namespace Amethyst
         private void tmData_Tick(object sender, EventArgs e)
         {
             lblSiteName.Text = "Network Name: " + Properties.Settings.Default.SiteName;
-            lblAdIntensity.Text = "Advertising Intensity: " + Properties.Settings.Default.AdIntensity.ToString();
+            lblAdIntensity.Text = "Ad Intensity: " + Properties.Settings.Default.AdIntensity.ToString();
             lblUserCount.Text = "Users: " + Properties.Settings.Default.Users.ToString();
             lblAdsense.Text = "AdSense? : " + (UpgradeMeta.checkUpgradeBought("Enable AdSense") ? "Yes" : "No");
         }

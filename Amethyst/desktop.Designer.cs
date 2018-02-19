@@ -45,6 +45,9 @@
             this.tmData = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.lblAnalyticsWidget = new System.Windows.Forms.Label();
+            this.lblAnalyticsUsers = new System.Windows.Forms.Label();
+            this.lblAnalyticsAdsense = new System.Windows.Forms.Label();
             this.panelBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -179,6 +182,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblAnalyticsAdsense);
+            this.panel1.Controls.Add(this.lblAnalyticsUsers);
+            this.panel1.Controls.Add(this.lblAnalyticsWidget);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblDayCount);
             this.panel1.Controls.Add(this.btnRestart);
@@ -201,6 +207,39 @@
             this.label1.Size = new System.Drawing.Size(124, 27);
             this.label1.TabIndex = 5;
             this.label1.Text = "Sidebar";
+            // 
+            // lblAnalyticsWidget
+            // 
+            this.lblAnalyticsWidget.AutoSize = true;
+            this.lblAnalyticsWidget.Font = new System.Drawing.Font("Lucida Console", 13F);
+            this.lblAnalyticsWidget.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAnalyticsWidget.Location = new System.Drawing.Point(90, 103);
+            this.lblAnalyticsWidget.Name = "lblAnalyticsWidget";
+            this.lblAnalyticsWidget.Size = new System.Drawing.Size(107, 18);
+            this.lblAnalyticsWidget.TabIndex = 6;
+            this.lblAnalyticsWidget.Text = "Analytics";
+            // 
+            // lblAnalyticsUsers
+            // 
+            this.lblAnalyticsUsers.AutoSize = true;
+            this.lblAnalyticsUsers.Font = new System.Drawing.Font("Lucida Console", 8.25F);
+            this.lblAnalyticsUsers.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblAnalyticsUsers.Location = new System.Drawing.Point(3, 121);
+            this.lblAnalyticsUsers.Name = "lblAnalyticsUsers";
+            this.lblAnalyticsUsers.Size = new System.Drawing.Size(82, 11);
+            this.lblAnalyticsUsers.TabIndex = 7;
+            this.lblAnalyticsUsers.Text = "Users: null";
+            // 
+            // lblAnalyticsAdsense
+            // 
+            this.lblAnalyticsAdsense.AutoSize = true;
+            this.lblAnalyticsAdsense.Font = new System.Drawing.Font("Lucida Console", 8.25F);
+            this.lblAnalyticsAdsense.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblAnalyticsAdsense.Location = new System.Drawing.Point(91, 121);
+            this.lblAnalyticsAdsense.Name = "lblAnalyticsAdsense";
+            this.lblAnalyticsAdsense.Size = new System.Drawing.Size(110, 11);
+            this.lblAnalyticsAdsense.TabIndex = 8;
+            this.lblAnalyticsAdsense.Text = "Adsense? : null";
             // 
             // desktop
             // 
@@ -243,5 +282,8 @@
         private System.Windows.Forms.ToolStripMenuItem tsmLeaderboard;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblAnalyticsUsers;
+        private System.Windows.Forms.Label lblAnalyticsWidget;
+        private System.Windows.Forms.Label lblAnalyticsAdsense;
     }
 }
