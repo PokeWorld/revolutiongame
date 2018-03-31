@@ -89,6 +89,7 @@ namespace Amethyst
                 Properties.Settings.Default.upgradesBought = new System.Collections.Hashtable();
                 Properties.Settings.Default.upgradesAvailable.Add("Enable AdSense", null);
                 Properties.Settings.Default.upgradesAvailable.Add("Unlock Leaderboards", null);
+                Properties.Settings.Default.upgradesAvailable.Add("Exploiter", null);
             }
             UpgradeMeta.load();
         }

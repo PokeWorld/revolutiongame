@@ -79,7 +79,7 @@ namespace Amethyst
 
         private void desktop_Activated(object sender, EventArgs e)
         {
-            RPCManger.UpdateSatus("Desktop", "Managing the desktop", "logo");
+            //RPCManger.UpdateSatus("Desktop", "Managing the desktop", "logo");
         }
 
         private void upgradeShopToolStripMenuItem_Click(object sender, EventArgs e)

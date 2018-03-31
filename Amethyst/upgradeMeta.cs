@@ -38,7 +38,7 @@ namespace Amethyst
 
         public static List<String> listUpgradesAvaiable()
         {
-            List<String> upgrades = new List<string>();
+            List<string> upgrades = new List<string>();
             foreach (DictionaryEntry i in Properties.Settings.Default.upgradesAvailable)
             {
                 if (Properties.Settings.Default.upgradesBought.Contains(i.Key)) break;
