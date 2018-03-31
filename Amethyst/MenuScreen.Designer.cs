@@ -32,11 +32,11 @@
             this.tmText = new System.Windows.Forms.Timer(this.components);
             this.tmGraphic = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblAdvice = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblAmethyst = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,17 @@
             this.panel1.Size = new System.Drawing.Size(353, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Console", 10F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(42, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 14);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Welcome to the media revolution.";
             // 
             // lblAdvice
             // 
@@ -115,17 +126,6 @@
             this.lblAmethyst.Size = new System.Drawing.Size(353, 54);
             this.lblAmethyst.TabIndex = 0;
             this.lblAmethyst.Text = "Revolution";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Console", 10F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(42, 74);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(263, 14);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Welcome to the media revolution.";
             // 
             // MenuScreen
             // 
