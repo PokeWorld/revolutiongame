@@ -44,10 +44,11 @@
             this.lblMoney = new System.Windows.Forms.Label();
             this.tmData = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblAnalyticsWidget = new System.Windows.Forms.Label();
-            this.lblAnalyticsUsers = new System.Windows.Forms.Label();
             this.lblAnalyticsAdsense = new System.Windows.Forms.Label();
+            this.lblAnalyticsUsers = new System.Windows.Forms.Label();
+            this.lblAnalyticsWidget = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tsmExploiter = new System.Windows.Forms.ToolStripMenuItem();
             this.panelBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +71,7 @@
             this.tsmSiteController,
             this.tsmDodgeTheAd,
             this.tsmUpgradeShop,
+            this.tsmExploiter,
             this.tsmLeaderboard,
             this.ToolStripSeparator1,
             this.tsmShutdown});
@@ -81,47 +83,47 @@
             // tsmSiteAnaylytics
             // 
             this.tsmSiteAnaylytics.Name = "tsmSiteAnaylytics";
-            this.tsmSiteAnaylytics.Size = new System.Drawing.Size(161, 22);
+            this.tsmSiteAnaylytics.Size = new System.Drawing.Size(180, 22);
             this.tsmSiteAnaylytics.Text = "Analytics";
             this.tsmSiteAnaylytics.Click += new System.EventHandler(this.tsmSiteAnaylytics_Click);
             // 
             // tsmSiteController
             // 
             this.tsmSiteController.Name = "tsmSiteController";
-            this.tsmSiteController.Size = new System.Drawing.Size(161, 22);
+            this.tsmSiteController.Size = new System.Drawing.Size(180, 22);
             this.tsmSiteController.Text = "Control Panel";
             this.tsmSiteController.Click += new System.EventHandler(this.tsmSiteController_Click);
             // 
             // tsmDodgeTheAd
             // 
             this.tsmDodgeTheAd.Name = "tsmDodgeTheAd";
-            this.tsmDodgeTheAd.Size = new System.Drawing.Size(161, 22);
+            this.tsmDodgeTheAd.Size = new System.Drawing.Size(180, 22);
             this.tsmDodgeTheAd.Text = "Dodge The Ad";
             this.tsmDodgeTheAd.Click += new System.EventHandler(this.tsmDodgeTheAd_Click);
             // 
             // tsmUpgradeShop
             // 
             this.tsmUpgradeShop.Name = "tsmUpgradeShop";
-            this.tsmUpgradeShop.Size = new System.Drawing.Size(161, 22);
+            this.tsmUpgradeShop.Size = new System.Drawing.Size(180, 22);
             this.tsmUpgradeShop.Text = "Upgrade Shop";
             this.tsmUpgradeShop.Click += new System.EventHandler(this.upgradeShopToolStripMenuItem_Click);
             // 
             // tsmLeaderboard
             // 
             this.tsmLeaderboard.Name = "tsmLeaderboard";
-            this.tsmLeaderboard.Size = new System.Drawing.Size(161, 22);
+            this.tsmLeaderboard.Size = new System.Drawing.Size(180, 22);
             this.tsmLeaderboard.Text = "Leaderboard";
             this.tsmLeaderboard.Click += new System.EventHandler(this.leaderboardToolStripMenuItem_Click);
             // 
             // ToolStripSeparator1
             // 
             this.ToolStripSeparator1.Name = "ToolStripSeparator1";
-            this.ToolStripSeparator1.Size = new System.Drawing.Size(158, 6);
+            this.ToolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // tsmShutdown
             // 
             this.tsmShutdown.Name = "tsmShutdown";
-            this.tsmShutdown.Size = new System.Drawing.Size(161, 22);
+            this.tsmShutdown.Size = new System.Drawing.Size(180, 22);
             this.tsmShutdown.Text = "Shutdown";
             this.tsmShutdown.Click += new System.EventHandler(this.tsmShutdown_Click);
             // 
@@ -197,27 +199,16 @@
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label1
+            // lblAnalyticsAdsense
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Lucida Console", 20F);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(73, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 27);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Sidebar";
-            // 
-            // lblAnalyticsWidget
-            // 
-            this.lblAnalyticsWidget.AutoSize = true;
-            this.lblAnalyticsWidget.Font = new System.Drawing.Font("Lucida Console", 13F);
-            this.lblAnalyticsWidget.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAnalyticsWidget.Location = new System.Drawing.Point(90, 103);
-            this.lblAnalyticsWidget.Name = "lblAnalyticsWidget";
-            this.lblAnalyticsWidget.Size = new System.Drawing.Size(107, 18);
-            this.lblAnalyticsWidget.TabIndex = 6;
-            this.lblAnalyticsWidget.Text = "Analytics";
+            this.lblAnalyticsAdsense.AutoSize = true;
+            this.lblAnalyticsAdsense.Font = new System.Drawing.Font("Lucida Console", 8.25F);
+            this.lblAnalyticsAdsense.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblAnalyticsAdsense.Location = new System.Drawing.Point(91, 121);
+            this.lblAnalyticsAdsense.Name = "lblAnalyticsAdsense";
+            this.lblAnalyticsAdsense.Size = new System.Drawing.Size(110, 11);
+            this.lblAnalyticsAdsense.TabIndex = 8;
+            this.lblAnalyticsAdsense.Text = "Adsense? : null";
             // 
             // lblAnalyticsUsers
             // 
@@ -230,16 +221,34 @@
             this.lblAnalyticsUsers.TabIndex = 7;
             this.lblAnalyticsUsers.Text = "Users: null";
             // 
-            // lblAnalyticsAdsense
+            // lblAnalyticsWidget
             // 
-            this.lblAnalyticsAdsense.AutoSize = true;
-            this.lblAnalyticsAdsense.Font = new System.Drawing.Font("Lucida Console", 8.25F);
-            this.lblAnalyticsAdsense.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblAnalyticsAdsense.Location = new System.Drawing.Point(91, 121);
-            this.lblAnalyticsAdsense.Name = "lblAnalyticsAdsense";
-            this.lblAnalyticsAdsense.Size = new System.Drawing.Size(110, 11);
-            this.lblAnalyticsAdsense.TabIndex = 8;
-            this.lblAnalyticsAdsense.Text = "Adsense? : null";
+            this.lblAnalyticsWidget.AutoSize = true;
+            this.lblAnalyticsWidget.Font = new System.Drawing.Font("Lucida Console", 13F);
+            this.lblAnalyticsWidget.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblAnalyticsWidget.Location = new System.Drawing.Point(90, 103);
+            this.lblAnalyticsWidget.Name = "lblAnalyticsWidget";
+            this.lblAnalyticsWidget.Size = new System.Drawing.Size(107, 18);
+            this.lblAnalyticsWidget.TabIndex = 6;
+            this.lblAnalyticsWidget.Text = "Analytics";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Console", 20F);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(73, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 27);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Sidebar";
+            // 
+            // tsmExploiter
+            // 
+            this.tsmExploiter.Name = "tsmExploiter";
+            this.tsmExploiter.Size = new System.Drawing.Size(180, 22);
+            this.tsmExploiter.Text = "Exploiter";
+            this.tsmExploiter.Click += new System.EventHandler(this.tsmExploiter_Click);
             // 
             // desktop
             // 
@@ -285,5 +294,6 @@
         private System.Windows.Forms.Label lblAnalyticsUsers;
         private System.Windows.Forms.Label lblAnalyticsWidget;
         private System.Windows.Forms.Label lblAnalyticsAdsense;
+        private System.Windows.Forms.ToolStripMenuItem tsmExploiter;
     }
 }

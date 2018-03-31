@@ -15,9 +15,11 @@ namespace Amethyst
         {
             upgradeDescriptions.Add("Enable AdSense", "This allows you to put ads on your network\r\nto make money from it.");
             upgradeDescriptions.Add("Unlock Leaderboards", "Now, you can see your standing versus \r\nother networks in this handy application!");
+            upgradeDescriptions.Add("Exploiter", "Exploit the enemy networks and take down their sites for a short period of time. This may have some negative consequences though...");
 
             upgradePrices.Add("Enable AdSense", 50);
             upgradePrices.Add("Unlock Leaderboards", 95);
+            upgradePrices.Add("Exploiter", 150);
         }
         
         public static int getUpgradePrice(string upgradeName)

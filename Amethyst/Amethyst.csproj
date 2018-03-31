@@ -87,6 +87,12 @@
     <Compile Include="DodgeTheAd.Designer.cs">
       <DependentUpon>DodgeTheAd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Exploiter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Exploiter.Designer.cs">
+      <DependentUpon>Exploiter.cs</DependentUpon>
+    </Compile>
     <Compile Include="InProgressPlaceholder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DodgeTheAd.resx">
       <DependentUpon>DodgeTheAd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exploiter.resx">
+      <DependentUpon>Exploiter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InProgressPlaceholder.resx">
       <DependentUpon>InProgressPlaceholder.cs</DependentUpon>

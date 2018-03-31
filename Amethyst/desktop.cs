@@ -24,6 +24,7 @@ namespace Amethyst
             lblDayCount.Text = "Day " + Properties.Settings.Default.DayCount.ToString();
             lblMoney.Text = "Money: $" + Properties.Settings.Default.CashCount.ToString();
             if (!UpgradeMeta.checkUpgradeBought("Unlock Leaderboards")) tsmLeaderboard.Visible = false;
+            // if (!UpgradeMeta.checkUpgradeBought("Exploiter")) tsmExploiter.Visible = false;
         }
 
         private void btnDayAdvance_Click(object sender, EventArgs e)
@@ -94,6 +95,11 @@ namespace Amethyst
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             panel1.BackColor = System.Drawing.Color.FromArgb(15, 155, 155, 155);
+        }
+
+        private void tsmExploiter_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new Exploiter(), "Exploiter", "Exploiting the enemies", "controlpanel", Properties.Resources.ControlPanel);
         }
     }
 }
