@@ -71,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Lucida Console", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(42, 74);
+            this.label1.Location = new System.Drawing.Point(52, 74);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(263, 14);
             this.label1.TabIndex = 4;
@@ -121,7 +121,7 @@
             this.lblAmethyst.AutoSize = true;
             this.lblAmethyst.Font = new System.Drawing.Font("Lucida Console", 40F);
             this.lblAmethyst.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAmethyst.Location = new System.Drawing.Point(3, 20);
+            this.lblAmethyst.Location = new System.Drawing.Point(0, 20);
             this.lblAmethyst.Name = "lblAmethyst";
             this.lblAmethyst.Size = new System.Drawing.Size(353, 54);
             this.lblAmethyst.TabIndex = 0;
