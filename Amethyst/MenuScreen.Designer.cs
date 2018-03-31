@@ -36,6 +36,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnPlay = new System.Windows.Forms.Button();
             this.lblAmethyst = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.lblAdvice);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnPlay);
@@ -60,7 +62,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(335, 600);
+            this.panel1.Size = new System.Drawing.Size(353, 600);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -82,7 +84,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Lucida Console", 12F);
             this.btnExit.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnExit.Location = new System.Drawing.Point(73, 112);
+            this.btnExit.Location = new System.Drawing.Point(85, 132);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(189, 29);
             this.btnExit.TabIndex = 2;
@@ -95,7 +97,7 @@
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Lucida Console", 12F);
             this.btnPlay.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnPlay.Location = new System.Drawing.Point(73, 77);
+            this.btnPlay.Location = new System.Drawing.Point(85, 97);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(189, 29);
             this.btnPlay.TabIndex = 1;
@@ -108,11 +110,22 @@
             this.lblAmethyst.AutoSize = true;
             this.lblAmethyst.Font = new System.Drawing.Font("Lucida Console", 40F);
             this.lblAmethyst.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblAmethyst.Location = new System.Drawing.Point(28, 20);
+            this.lblAmethyst.Location = new System.Drawing.Point(3, 20);
             this.lblAmethyst.Name = "lblAmethyst";
-            this.lblAmethyst.Size = new System.Drawing.Size(287, 54);
+            this.lblAmethyst.Size = new System.Drawing.Size(353, 54);
             this.lblAmethyst.TabIndex = 0;
-            this.lblAmethyst.Text = "Amethyst";
+            this.lblAmethyst.Text = "Revolution";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Console", 10F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(42, 74);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(263, 14);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Welcome to the media revolution.";
             // 
             // MenuScreen
             // 
@@ -140,6 +153,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnPlay;
         private System.Windows.Forms.Label lblAmethyst;
+        private System.Windows.Forms.Label label1;
     }
 }
 
